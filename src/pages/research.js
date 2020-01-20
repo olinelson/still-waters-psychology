@@ -8,8 +8,11 @@ import {
     Tab,
     Responsive
 } from "semantic-ui-react";
+import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
+import Layout from '../components/layout'
+
 export default function Research() {
-    const topOfTabRef = useRef(null);
+   
 
     const articles = () => {
         return (
@@ -1022,12 +1025,9 @@ export default function Research() {
     ];
 
     return (
-        <>
+        <Layout>
             <Jumbotron
-                imgDir='images/image_7/'
-                fileName='image_7'
-                imgFormat='jpg'
-                fileCount={5}
+                src={purpleFlower}
             ></Jumbotron>
             <Divider hidden />
             <Container>
@@ -1043,62 +1043,22 @@ export default function Research() {
                     a range of research collaborations, including as Senior Research
                     Fellow with the Lumen Research Institute (2017-2020).
         </p>
-                <div ref={topOfTabRef} />
-                <Responsive
-                    as={Tab}
-                    menu={{
-                        fluid: true,
-                        stackable: true,
-                        vertical: false
-                    }}
-                    onTabChange={() => {
-                        document.querySelector("#scrollableContainer").scroll({
-                            top: topOfTabRef.current.offsetTop - 60,
-                            behavior: "smooth"
-                        });
-                    }}
-                    panes={panes}
-                    {...Responsive.onlyMobile}
-                ></Responsive>
 
-                <Responsive
-                    as={Tab}
+                
+                <Tab
+
                     menu={{
                         fluid: true,
                         // stackable: true,
                         vertical: true
                     }}
                     panes={panes}
-                    onTabChange={() => {
-                        document.querySelector("#scrollableContainer").scroll({
-                            top: topOfTabRef.current.offsetTop - 60,
-                            behavior: "smooth"
-                        });
-                    }}
-                    {...Responsive.onlyTablet}
-                ></Responsive>
-                <Responsive
-                    as={Tab}
-                    menu={{
-                        fluid: true,
-                        // stackable: true,
-                        vertical: true
-                    }}
-                    panes={panes}
-                    onTabChange={() => {
-                        document.querySelector("#scrollableContainer").scroll({
-                            top: topOfTabRef.current.offsetTop - 60,
-                            behavior: "smooth"
-                        });
-                    }}
-                    {...Responsive.onlyComputer}
-                ></Responsive>
+                  
 
-                {/* <Tab
-          // menu={{ fluid: true, tabular: true, stackable: true, vertical: true }}
-          panes={panes}
-        /> */}
+                ></Tab>
+
+
             </Container>
-        </>
+        </Layout>
     );
 }

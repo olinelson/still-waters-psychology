@@ -3,18 +3,29 @@ import { Container, Card, Divider, List, Segment } from 'semantic-ui-react'
 import { Jumbotron } from '../components/StyledComponents'
 import Layout from '../components/layout'
 
+import blueWater from '../images/resources/image_18_Blue_water.jpg'
+
+// logos
+import blackdog from '../images/logos/black_dog.jpg'
+import lifeline from '../images/logos/lifeline.png'
+import beyondblue from '../images/logos/beyondblue.png'
+import vinnies from '../images/logos/vinnies_logo.png'
+import grow from '../images/logos/grow_logo.png'
+import quest from '../images/logos/quest_for_life.png'
+import mentalHealthAustralia from '../images/logos/mental_health_australia.png'
+import wayAhead from '../images/logos/way_ahead.png'
+import sane from '../images/logos/sane_blue.jpg'
+import mentalHealthCareers from '../images/logos/mental_health_careers.png'
+import headToHealth from '../images/logos/head_to_health.png'
+import openMinds from '../images/logos/open_minds.png'
+import acon from '../images/logos/acon.png'
+import copmi from '../images/logos/copmi.png'
+import therapy from '../images/resources/image_9_Therapy_1.jpg'
+
 export default function Resources() {
   return (
     <Layout>
-      <Jumbotron
-        imgDir="images/image_18/"
-        fileName="image_18"
-        imgFormat="jpg"
-        fileCount={8}
-        style={{
-          backgroundPosition: 'center',
-        }}
-      />
+      <Jumbotron src={blueWater} />
 
       <Container text>
         <Divider hidden />
@@ -131,13 +142,7 @@ export default function Resources() {
 
       <Divider hidden />
 
-      <Jumbotron
-        imgDir="images/image_9/"
-        fileName="image_9"
-        imgFormat="jpg"
-        fileCount={5}
-        src="images/Image_9_Therapy_1.jpg"
-      />
+      <Jumbotron src={therapy} />
 
       <Divider hidden />
 
@@ -155,12 +160,9 @@ export default function Resources() {
       <Divider hidden />
       <Container>
         <Card.Group centered>
+          <Card image={blackdog} href="https://www.blackdoginstitute.org.au/" />
           <Card
-            image="logos/black_dog.jpg"
-            href="https://www.blackdoginstitute.org.au/"
-          />
-          <Card
-            image="logos/lifeline.png"
+            image={lifeline}
             style={{
               background: '#013D79',
               justifyContent: 'center',
@@ -169,7 +171,7 @@ export default function Resources() {
             href="https://www.lifeline.org.au/"
           />
           <Card
-            image="logos/beyondblue.png"
+            image={beyondblue}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -177,7 +179,7 @@ export default function Resources() {
             href="https://www.beyondblue.org.au/"
           />
           <Card
-            image="logos/vinnies_logo.png"
+            image={vinnies}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -186,7 +188,7 @@ export default function Resources() {
             href="https://www.vinnies.org.au/"
           />
           <Card
-            image="logos/grow_logo.png"
+            image={grow}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -194,7 +196,7 @@ export default function Resources() {
             href="https://www.grow.org.au/"
           />
           <Card
-            image="logos/quest_for_life.png"
+            image={quest}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -206,11 +208,11 @@ export default function Resources() {
               justifyContent: 'center',
               padding: '.5rem',
             }}
-            image="logos/mental_health_australia.png"
             href="https://mhaustralia.org/"
+            image={mentalHealthAustralia}
           />
           <Card
-            image="logos/way_ahead.png"
+            image={wayAhead}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -221,11 +223,11 @@ export default function Resources() {
             style={{
               justifyContent: 'center',
             }}
-            image="logos/sane_blue.jpg"
+            image={sane}
             href="hhttps://www.sane.org"
           />
           <Card
-            image="logos/mental_health_careers.png"
+            image={mentalHealthCareers}
             style={{
               justifyContent: 'center',
               padding: '.5rem',
@@ -234,7 +236,7 @@ export default function Resources() {
           />
 
           <Card
-            image="logos/head_to_health.png"
+            image={headToHealth}
             header="Mind Health Connect"
             href="https://headtohealth.gov.au/"
           />
@@ -244,7 +246,7 @@ export default function Resources() {
               justifyContent: 'center',
               padding: '.5rem',
             }}
-            image="logos/open_minds.png"
+            image={openMinds}
             href="https://www.openminds.org.au/"
           />
           <Card
@@ -253,7 +255,7 @@ export default function Resources() {
               padding: '1rem',
             }}
             size="small"
-            image="logos/acon.png"
+            image={acon}
             href="https://www.acon.org.au/"
           />
           <Card
@@ -262,7 +264,7 @@ export default function Resources() {
               padding: '1rem',
             }}
             size="small"
-            image="logos/copmi.png"
+            image={copmi}
             href="https://http://www.copmi.net.au/"
           />
         </Card.Group>

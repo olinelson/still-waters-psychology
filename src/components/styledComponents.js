@@ -82,7 +82,7 @@ export const ImageDiv = styled.div`
   width: ${props => props.width || 'auto'};
   height: ${props => props.height || 'auto'};
   min-height: ${props => props.minHeight || 'none'};
-  background: ${props => `url('${window.location.origin}/${props.src}')`};
+  background: ${props => `url('${props.src}')`};
   background-size: cover;
   grid-area: ${props => `${props.gridArea}`};
   background-position: center;

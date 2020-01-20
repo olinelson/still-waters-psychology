@@ -64,6 +64,9 @@ const Layout = ({ children }) => (
               Staff
             </List.Item>
             <List.Item as={Link} to="/research">
+              Research
+            </List.Item>
+            <List.Item as={Link} to="/research">
               Resources
             </List.Item>
             <List.Item as={Link} to="/contact">

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import { Link, navigate } from 'gatsby'
-import { Menu, Sidebar, Icon } from 'semantic-ui-react'
+import { Menu, Sidebar, Icon, Image } from 'semantic-ui-react'
 import { MobileOnlyDiv, DesktopOnlyDiv } from '../components/styledComponents'
+
+import blackLogo from '../images/logos/black_logo.svg'
 
 function Nav({ siteTitle }) {
   const [visible, setVisible] = useState(false)
@@ -19,6 +21,7 @@ function Nav({ siteTitle }) {
           <LinkedItem to="/about">About</LinkedItem>
           <LinkedItem to="/services">Services</LinkedItem>
           <LinkedItem to="/staff">Staff</LinkedItem>
+          <LinkedItem to="/research">Research</LinkedItem>
           <LinkedItem to="/resources">Resources</LinkedItem>
           <LinkedItem to="/contact">Contact</LinkedItem>
         </Menu.Menu>
@@ -43,17 +46,19 @@ function Nav({ siteTitle }) {
           <Icon size="large" name="close" />
         </Menu.Item>
 
-        <LinkedItem to="/">Home</LinkedItem>
         <LinkedItem to="/about">About</LinkedItem>
+        <LinkedItem to="/services">Services</LinkedItem>
+        <LinkedItem to="/staff">Staff</LinkedItem>
+        <LinkedItem to="/research">Research</LinkedItem>
+        <LinkedItem to="/resources">Resources</LinkedItem>
         <LinkedItem to="/contact">Contact</LinkedItem>
-        <LinkedItem to="/gallery">Gallery</LinkedItem>
-        <LinkedItem to="/recordings">Recordings</LinkedItem>
       </Sidebar>
 
       <Menu borderless fixed="top">
         <Menu.Menu position="left">
           <Menu.Item onClick={() => navigate('/')}>
-            <h2>SCC</h2>
+            {/* <h2>Still Waters</h2> */}
+            <Image size="mini" src={blackLogo} />
           </Menu.Item>
         </Menu.Menu>
         <Menu.Menu position="right">

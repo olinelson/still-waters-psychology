@@ -1,7 +1,9 @@
 import React from 'react'
 
 import ContactForm from '../components/ContactForm'
+
 import { Jumbotron } from '../components/StyledComponents'
+import pathImg from '../images/resources/image_16_Path.jpg'
 
 import {
   Embed,
@@ -79,15 +81,7 @@ export default function Contact() {
 
   return (
     <Layout>
-      <Jumbotron
-        imgDir="images/image_16/"
-        fileName="image_16"
-        imgFormat="jpg"
-        fileCount={7}
-        style={{
-          backgroundPosition: 'center',
-        }}
-      />
+      <Jumbotron imgDir="images/image_16/" src={pathImg} />
 
       <Container text>
         <Divider hidden />
