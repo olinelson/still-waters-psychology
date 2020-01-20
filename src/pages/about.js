@@ -22,6 +22,7 @@ import {
   Image,
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
+import FAQS from '../components/Faqs'
 // images
 import wharf from '../images/resources/wharf.jpg'
 import boat from '../images/resources/boat.png'
@@ -127,6 +128,8 @@ export default function About() {
           </blockquote>
         </JumboMessage>
       </Jumbotron>
+      <Divider hidden />
+      <FAQS />
     </Layout>
   )
 }

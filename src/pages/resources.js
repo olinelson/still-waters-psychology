@@ -67,11 +67,11 @@ export default function Resources() {
               <List.Icon size="huge" name="slideshare" />
               <List.Content>
                 <List.Header>
-                  Contact the community mental health team
+                  Contact the Mental Health Line on 1800 011 511
                 </List.Header>
                 <List.Description>
-                  ask to speak with the intake officer who will be able to guide
-                  you.
+                  You can speak with someone who will be able to guide you
+                  through the steps to obtaining support.
                 </List.Description>
               </List.Content>
             </List.Item>
@@ -93,7 +93,15 @@ export default function Resources() {
       <Container text>
         <p>
           You can also contact the following numbers to seek help or to speak
-          with someone about your situation:
+          with someone about your situation. In addition, the{' '}
+          <a href="https://www.health.nsw.gov.au/public/Pages/default.aspx ">
+            Health NSW website
+          </a>{' '}
+          (www.health.nsw.gov.au) provides details and contact numbers for{' '}
+          <a href="https://www.health.nsw.gov.au/mentalhealth/Pages/contact-service.aspx">
+            mental health services
+          </a>{' '}
+          across the country.
         </p>
       </Container>
 

@@ -260,10 +260,6 @@ const IndexPage = ({ location }) => (
 
         {/* <CreditContainer></CreditContainer> */}
       </Jumbotron>
-
-      <Divider hidden />
-
-      <FAQS />
     </Layout>
   </>
 )

@@ -6,7 +6,8 @@ import {
     Table,
     Label,
     Tab,
-    Responsive
+    Responsive,
+    Header
 } from "semantic-ui-react";
 import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
 import Layout from '../components/layout'
@@ -1002,12 +1003,12 @@ export default function Research() {
         { menuItem: "Articles", render: () => articles() },
         { menuItem: "Book Chapters", render: () => bookChapters() },
         { menuItem: "Edited Monograph", render: () => editedMonograph() },
+        // {
+        //     menuItem: "Published Peer-Reviewed Abstracts",
+        //     render: () => publicPeerReviewAbstracts()
+        // },
         {
-            menuItem: "Published Peer-Reviewed Abstracts",
-            render: () => publicPeerReviewAbstracts()
-        },
-        {
-            menuItem: "Symposium Convener",
+            menuItem: "Symposium",
             render: () => symposiumConvener()
         },
         {
@@ -1030,8 +1031,8 @@ export default function Research() {
                 src={purpleFlower}
             ></Jumbotron>
             <Divider hidden />
-            <Container>
-                <h1>Research</h1>
+            <Container >
+                <Header as={'h1'} textAlign="center">Research</Header>
                 <p>
                     Engaging in research is an important aspect of academic life. Below
                     are listed publications and presentations arising from this work (both
