@@ -33,7 +33,7 @@ export default function About() {
   return (
     <Layout>
       <Jumbotron src={wharf}></Jumbotron>
-      <Container>
+      <Container text>
         <Segment basic size="large">
           <h1>Still Waters</h1>
           <p>
