@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { StaticQuery, graphql, Link } from 'gatsby'
-import { Container, Icon, Divider, List } from 'semantic-ui-react'
+import { Container, Icon, Divider, List, Segment } from 'semantic-ui-react'
 
 import Header from './header'
 
@@ -45,36 +45,38 @@ const Layout = ({ children }) => (
         <Divider hidden />
 
         <Divider hidden />
-        <div>
-          <Container textAlign="center">
-            {/* <Image centered size="tiny" src="logos/logo.png" /> */}
-            <h4>Sydney Clarinet Choir</h4>
 
-            <List horizontal inverted={false} divided link size="small">
-              <List.Item as={Link} to="/">
-                Home
-              </List.Item>
-              <List.Item as={Link} to="/about">
-                About
-              </List.Item>
-              <List.Item as={Link} to="/contact">
-                Contact
-              </List.Item>
-              <List.Item as={Link} to="/gallery">
-                Gallery
-              </List.Item>
-              <List.Item as={Link} to="/recordings">
-                Recordings
-              </List.Item>
-            </List>
-            <Divider hidden />
-            <small style={{ color: 'grey' }}>
-              <Icon name="copyright" />
-              {new Date().getFullYear()}
-            </small>
-            <Divider hidden />
-          </Container>
-        </div>
+        <Segment textAlign="center" padded="very">
+          {/* <Image centered size="tiny" src="logos/logo.png" /> */}
+          <h4>{data.site.siteMetadata.title}</h4>
+
+          <List horizontal inverted={false} divided link size="small">
+            <List.Item as={Link} to="/">
+              Home
+            </List.Item>
+            <List.Item as={Link} to="/about">
+              About
+            </List.Item>
+            <List.Item as={Link} to="/services">
+              Services
+            </List.Item>
+            <List.Item as={Link} to="/staff">
+              Staff
+            </List.Item>
+            <List.Item as={Link} to="/research">
+              Resources
+            </List.Item>
+            <List.Item as={Link} to="/contact">
+              Contact
+            </List.Item>
+          </List>
+          <Divider hidden />
+          <small style={{ color: 'grey' }}>
+            <Icon name="copyright" />
+            {new Date().getFullYear()}
+          </small>
+          <Divider hidden />
+        </Segment>
       </SiteContainer>
     )}
   />

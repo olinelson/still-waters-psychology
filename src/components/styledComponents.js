@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Header, Container } from 'semantic-ui-react'
+import { Header, Container, Grid } from 'semantic-ui-react'
 
 export const JumboHeader = styled(Header)`
   font-size: 5rem;
@@ -10,7 +10,7 @@ export const JumboHeader = styled(Header)`
 
 export const Jumbotron = styled.div`
   background-position: ${props =>
-    props.right ? 'right 15vw top 0% !important' : 'center'};
+    props.right ? 'right 15vw top 0% !important' : 'center !important'};
   background-size: ${props =>
     props.contain ? 'contain !important' : 'cover !important'};
   background-repeat: no-repeat !important;
@@ -68,4 +68,30 @@ export const CarouselImage = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
+`
+
+export const CenteredGridColumn = styled(Grid.Column)`
+  display: flex !important;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+`
+export const ImageDiv = styled.div`
+  width: ${props => props.width || 'auto'};
+  height: ${props => props.height || 'auto'};
+  min-height: ${props => props.minHeight || 'none'};
+  background: ${props => `url('${window.location.origin}/${props.src}')`};
+  background-size: cover;
+  grid-area: ${props => `${props.gridArea}`};
+  background-position: center;
+`
+export const CreditContainer = styled.div`
+  padding: 1rem;
+  color: white;
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-end;
+  align-items: flex-end;
 `

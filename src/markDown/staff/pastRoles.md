@@ -1,0 +1,11 @@
+---
+title: 'Past Roles'
+---
+
+# Past Roles
+
+For a large part of the past 20+ years I have been involved in academia, firstly as a student, then as a lecturer and senior lecturer. I love teaching and find it rewarding and exciting to observe students become engaged in, and passionate about the material being delivered to them. Similarly, I enjoy delivering professional development workshops and speaking at conferences, sharing professional knowledge and research findings to varied audiences. For example, I was the sole facilitator for the BaptistCare Chaplaincy Conference (2018) and keynote speaker for the Australian Chaplaincy Conference (ACC) (2017)
+
+I have also held various academic posts – for example, firstly Assistant Head (2011) and then Head of the Graduate School of Counselling at Excelsia College (formerly Wesley Institute) (2012-2019) and Director of the College’s Counselling Centre (2012-2018). As Head of School I oversaw the training of Masters-level counsellors, concurrently responsible for conceptualization, development, accreditation, rollout and ongoing review of a Master of Counselling program, supported by a team of highly experienced counsellor educators. Obtaining 7 years course accreditation from the Tertiary Quality and Standards Agency (TEQSA) Australia’s higher education regulator, and from the Psychotherapy and Counselling Federation of Australian (PACFA) and the Australian Counselling Association (ACA) was a highlight from this period. Designing a post-graduate counselling program consisting of 3 degrees is a unique privilege, enabling me to make a professional contribution to the counselling sector and the development of next generation of Christian counsellors.
+
+Prior to Excelsia College, I worked for the Christian’s Hospital at Westmead (2004-2012) as a psychologist researcher, part of a team exploring the experiences of families caring for children and young people, living with and dying from life-limiting and life-threating illnesses. It was an extraordinary and unique privilege to come alongside these families, observing and listening to their experiences, proving me with a nuanced insight into, and understanding of how illness, disability, death, bereavement, loss and grief affect both individuals and family unit.

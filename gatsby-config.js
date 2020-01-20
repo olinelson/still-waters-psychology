@@ -2,11 +2,11 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: 'Sydney Clarinet Choir',
+    title: 'Still Waters Psychology',
     siteURL: 'https://olinelson.github.io',
     // siteURL: 'http://localhost:8000',
   },
-  pathPrefix: '/scc',
+  pathPrefix: '/still-waters-gatsby',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,

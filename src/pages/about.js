@@ -1,100 +1,132 @@
 import React from 'react'
 
+import ContactForm from '../components/ContactForm'
+import {
+  JumboHeader,
+  JumboMessage,
+  Jumbotron,
+  CreditContainer,
+  ImageDiv,
+  CenteredGridColumn,
+} from '../components/StyledComponents'
+
+import {
+  Embed,
+  Container,
+  Button,
+  Divider,
+  Header,
+  Accordion,
+  Segment,
+  Responsive,
+  Image,
+} from 'semantic-ui-react'
 import Layout from '../components/layout'
-import { Link } from 'gatsby'
-import { Container, Item } from 'semantic-ui-react'
+// images
+import wharf from '../images/resources/wharf.jpg'
+import boat from '../images/resources/boat.png'
+import blueSunset from '../images/resources/image_4_Blue_Sunset.jpg'
 
-const About = ({ location }) => (
-  <Layout location={location}>
-    <Container text>
-      <h1>About</h1>
-      <p>
-        <span style={{ fontWeight: 'bold' }}>The Sydney Clarinet Choir</span>{' '}
-        was founded by Peter Scaysbrook and Deborah de Graaff to provide
-        experienced players with the opportunity to play chamber music. The
-        members come from diverse backgrounds but have a common interest in the
-        love of music and in the many tonal colours and abilities of the
-        clarinet. Typically, our concert programmes offer a wide selection of
-        genres and styles exactly showcasing those abilities. For future events
-        contact us <Link to="/contact">here</Link> or email us directly at{' '}
-        <a href="mailto:info@scc.net.au">info@scc.net.au</a>.
-      </p>
+import motherChild from '../images/resources/image_3_Mother_Child.jpg'
 
-      <Item.Group>
-        <Item>
-          <Item.Image
-            size="medium"
-            src="https://deborahdegraaff.com/images/headshot2.jpeg"
-          />
+export default function About() {
+  return (
+    <Layout>
+      <Jumbotron src={wharf}></Jumbotron>
+      <Container>
+        <Segment basic size="large">
+          <h1>Still Waters</h1>
+          <p>
+            The image of ‘still waters’ provides a powerful metaphor of the
+            quiet we often long for when faced with demanding lives, a turbulent
+            world, personal crisis, and/or a sense that personal growth is
+            required.
+          </p>
 
-          <Item.Content>
-            <Item.Header as="a">Deborah de Graaff</Item.Header>
-            <Item.Meta>Clarinet & musical director of SCC</Item.Meta>
-            <Item.Description>
-              Early in her career Deborah competed locally and internationally
-              in London and Munich, winning numerous prizes, scholarships and
-              awards, including national and Commonwealth ABC instrumental
-              competitions in 1983.For over 30 years she has performed as a
-              chamber musician most notably with her mother Lauris Elms, soprano
-              Rita Hunter, pianists Geoffrey Parsons, John Winther and Len
-              Vorster. As a concerto soloist she performed with Richard Bonynge
-              and Paul Dyer Brandenburg. She also worked overseas with the Fine
-              Arts Orchestra at St Martin in the Fields and in Vietnam. She
-              regularly broadcasts for the ABC, has recorded over sixteen CDs,
-              and collaborates in chamber recitals, often premiering especially
-              written Australian compositions. Teaching at the Sydney
-              Conservatorium of Music Tertiary, High School and Open Academy,
-              she is a Research Affiliate also teaching Clarinet at UNSW and her
-              private Sydney Town Hall studio. Awarded her PhD UNSW 2014
-              (Practice Strategies of Elite Instrumental Musicians) she received
-              a USYD Large Innovative Grant (2015) applying her PhD Model of
-              Elite Practice (MEP) towards music student motivation at
-              Conservatorium. Her 2016 publications include a Pitch Error Coding
-              Protocol paper, co-authored with Emery Schubert, published in
-              Music Perception (December 2016 issue). Her new CD titled Rags
-              Bags and Tangos was available on her website from early 2018 and
-              available to order in hard copy. Deborah is currently working on
-              an on-line video and PDF clarinet ‘book’ designed for teachers of
-              clarinet and advanced students wishing to gain the most out of
-              their practice.
-            </Item.Description>
-          </Item.Content>
-        </Item>
-        <Item>
-          <Item.Image
-            size="medium"
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ad/Placeholder_no_text.svg/600px-Placeholder_no_text.svg.png"
-          />
+          <p>
+            Whether alone or in the company of another (e.g., parent, partner,
+            friend, therapist, the divine) settling down alongside a body of
+            water can elicit an interior sense of stillness and peacefulness,
+            our physical bodies also relaxing.
+          </p>
+        </Segment>
 
-          <Item.Content>
-            <Item.Header as="a">Peter Dart</Item.Header>
-            <Item.Meta>Associate musical director:</Item.Meta>
-            <Item.Description>Short Bio .....</Item.Description>
-          </Item.Content>
-        </Item>
-      </Item.Group>
+        <Segment basic>
+          <Image centered size="large" src={motherChild} />
+        </Segment>
 
-      <h2>Choir Members</h2>
-      <h4>Core Group</h4>
-      <ul>
-        <li>Deborah de Graaff (musical director)</li>
-        <li>Peter Dart (associate musical director)</li>
-        <li>Doug Farrington (treasurer)</li>
-        <li>Ben Curry-Hyde</li>
-        <li>Nicki Frampton</li>
-        <li>Katie James</li>
-        <li>Tanya Poyitt</li>
-        <li>David Shannon (events manager)</li>
-        <li>Peter Scaysbrook (co-founder and president)</li>
-        <li>Kate Sweeny (secretary)</li>
-        <li>Paul Williamson</li>
-        <li>Zhu Xing Cao</li>
-      </ul>
+        <Segment
+          basic
+          size="big"
+          content=" In psychological terms, ‘still waters’ is a metaphor for
+          ‘self-regulation’: having a stable and coherent sense of self; being
+          able to reflectively move through life in ways that result in rich,
+          purposeful living; flexible and adaptive in the face of the
+          unexpected.
+        "
+        />
 
-      <h4>Guest Artists</h4>
-      <p>To be advised</p>
-    </Container>
-  </Layout>
-)
+        <Segment>
+          <blockquote style={{ color: 'black', fontSize: '2rem' }}>
+            {/* <Icon size='large' name='quote left' /> */}
+            <p style={{ textAlign: 'center' }}>
+              still waters is a metaphor for self-regulation
+            </p>
+          </blockquote>
+        </Segment>
 
-export default About
+        <Segment
+          basic
+          size="big"
+          content=" When faced with difficult situations and accompanying challenging
+          thoughts and feelings, it is easy to become overwhelmed and
+        distressed, unable to acts in ways aligned to one’s personal and
+        professional values and beliefs. At these times it can feel like we
+        are caught on a choppy ocean, at the mercy of the waves that buffet
+        us. Therapy provided in a caring, secure and supportive context allows
+        the individual to safely explore and address issues currently
+        affecting his/her life."
+        />
+
+        <Segment basic>
+          <Image centered size="large" src={boat} />
+        </Segment>
+
+        <Segment
+          basic
+          size="big"
+          content="
+          In the opening verses of Psalm 23 (1-3), Christian believers are told
+          that restoration of the soul comes in the context of ‘green pastures’
+          and ‘still waters’ – the Divine drawing the weary and the wounded to a
+          quiet place where restoration is possible. Therapy that takes into
+          consideration one’s worldview helps individuals address life issues in
+          ways that align with their life values."
+        />
+
+        <Divider hidden />
+      </Container>
+
+      <Jumbotron fullHeight src={blueSunset}>
+        <JumboMessage style={{}}>
+          <blockquote style={{ color: 'white' }}>
+            <p
+              style={{
+                textAlign: 'center',
+                fontSize: '2rem',
+              }}
+            >
+              The Lord is my shepherd; I shall not want. He makes me lie down in
+              green pastures. He leads me beside still waters. He restores my
+              soul.
+            </p>
+
+            <figcaption style={{ fontSize: '1rem', textAlign: 'right' }}>
+              &mdash; Psalm 23: 1: 3 ,Holy Bible, ESV®, 2001
+            </figcaption>
+          </blockquote>
+        </JumboMessage>
+      </Jumbotron>
+    </Layout>
+  )
+}

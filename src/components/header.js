@@ -17,9 +17,10 @@ function Nav({ siteTitle }) {
         <LinkedItem to="/">{siteTitle}</LinkedItem>
         <Menu.Menu position="right">
           <LinkedItem to="/about">About</LinkedItem>
+          <LinkedItem to="/services">Services</LinkedItem>
+          <LinkedItem to="/staff">Staff</LinkedItem>
+          <LinkedItem to="/resources">Resources</LinkedItem>
           <LinkedItem to="/contact">Contact</LinkedItem>
-          <LinkedItem to="/gallery">Gallery</LinkedItem>
-          <LinkedItem to="/recordings">Recordings</LinkedItem>
         </Menu.Menu>
       </Menu>
     </div>
