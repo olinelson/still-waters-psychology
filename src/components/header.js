@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, navigate } from 'gatsby'
-import { Menu, Sidebar, Icon, Image } from 'semantic-ui-react'
+import { Menu, Sidebar, Icon, Image, Responsive } from 'semantic-ui-react'
 import { MobileOnlyDiv, DesktopOnlyDiv } from '../components/styledComponents'
 
 import blackLogo from '../images/logos/black_logo.svg'
@@ -71,10 +71,27 @@ function Nav({ siteTitle }) {
   )
 
   return (
-    <>
-      <MobileOnlyDiv>{mobileMenu()}</MobileOnlyDiv>
+    // <>
+    //   <MobileOnlyDiv>{mobileMenu()}</MobileOnlyDiv>
 
-      <DesktopOnlyDiv>{fullMenu()}</DesktopOnlyDiv>
+    //   <DesktopOnlyDiv>{fullMenu()}</DesktopOnlyDiv>
+    // </>
+    <>
+      <Responsive as={'div'} {...Responsive.onlyMobile}>
+        {mobileMenu()}
+      </Responsive>
+      <Responsive as={'div'} {...Responsive.onlyTablet}>
+        {mobileMenu()}
+      </Responsive>
+      <Responsive as={'div'} {...Responsive.onlyComputer}>
+        {fullMenu()}
+      </Responsive>
+      {/* <Responsive as={'div'} {...Responsive.onlyLargeScreen}>
+        {fullMenu()}
+      </Responsive> */}
+      {/* <Responsive as={'div'} {...Responsive.onlyWidescreen}>
+        {fullMenu()}
+      </Responsive> */}
     </>
   )
 }
