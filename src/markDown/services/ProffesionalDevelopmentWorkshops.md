@@ -1,5 +1,5 @@
 ---
-title: 'Professional Development Workshops and Presentations'
+title: 'Workshops & Presentations'
 ---
 
 #Professional Development Workshops and Presentations

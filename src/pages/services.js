@@ -8,6 +8,7 @@ import hands from '../images/resources/Image_19_Hands.jpg'
 import plant from '../images/resources/plant.jpg'
 import sunsetWithRocks from '../images/resources/image_6_Sunset_with_rocks.jpg'
 import Layout from '../components/layout'
+import ResponsiveTabs from '../components/ResponsiveTabs'
 
 export default function Services() {
   const data = useStaticQuery(graphql`
@@ -40,15 +41,7 @@ export default function Services() {
       <Jumbotron src={sunsetWithRocks}></Jumbotron>
       <Divider hidden />
 
-      <Container style={{ minHeight: '50vh' }}>
-        <Tab
-          menu={{
-            fluid: true,
-            vertical: true,
-          }}
-          panes={panes}
-        ></Tab>
-      </Container>
+      <ResponsiveTabs panes={panes} />
     </Layout>
   )
 }

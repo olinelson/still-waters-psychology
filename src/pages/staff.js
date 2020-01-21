@@ -17,6 +17,7 @@ import medicare from '../images/logos/medicare.jpg'
 import ahpra from '../images/logos/ahpra.png'
 import aps from '../images/logos/aps.jpeg'
 import apa from '../images/logos/apa.png'
+import ResponsiveTabs from '../components/ResponsiveTabs'
 
 export default function Staff() {
   const [activeItem] = useState('biography')
@@ -127,18 +128,7 @@ export default function Staff() {
       <Divider hidden />
       <div ref={topOfTabRef} />
 
-      <Container style={{ minHeight: '50vh' }}>
-        <div ref={topOfTabRef} />
-
-        <Tab
-          menu={{
-            fluid: true,
-            stackable: true,
-            vertical: true,
-          }}
-          panes={panes}
-        ></Tab>
-      </Container>
+      <ResponsiveTabs panes={panes} />
     </Layout>
   )
 }

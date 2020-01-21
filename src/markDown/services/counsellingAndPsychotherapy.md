@@ -1,5 +1,5 @@
 ---
-title: 'Counselling and Psychotherapy'
+title: 'Counselling & Psychotherapy'
 ---
 
 #Counselling and Psychotherapy

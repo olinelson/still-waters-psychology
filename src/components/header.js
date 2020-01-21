@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { Link, navigate } from 'gatsby'
 import { Menu, Sidebar, Icon, Image, Responsive } from 'semantic-ui-react'
-import { MobileOnlyDiv, DesktopOnlyDiv } from '../components/styledComponents'
 
 import blackLogo from '../images/logos/black_logo.svg'
 
@@ -71,11 +70,6 @@ function Nav({ siteTitle }) {
   )
 
   return (
-    // <>
-    //   <MobileOnlyDiv>{mobileMenu()}</MobileOnlyDiv>
-
-    //   <DesktopOnlyDiv>{fullMenu()}</DesktopOnlyDiv>
-    // </>
     <>
       <Responsive as={'div'} {...Responsive.onlyMobile}>
         {mobileMenu()}
@@ -86,6 +80,7 @@ function Nav({ siteTitle }) {
       <Responsive as={'div'} {...Responsive.onlyComputer}>
         {fullMenu()}
       </Responsive>
+      {/* uneccessary as max-width set for site */}
       {/* <Responsive as={'div'} {...Responsive.onlyLargeScreen}>
         {fullMenu()}
       </Responsive> */}

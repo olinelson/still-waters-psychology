@@ -42,19 +42,6 @@ export const Footer = styled.div`
   align-items: center;
   background: #d3d3d3;
 `
-export const MobileOnlyDiv = styled.div`
-  display: none;
-  @media screen and (max-width: 980px) {
-    display: block;
-  }
-`
-export const DesktopOnlyDiv = styled.div`
-  display: none;
-
-  @media screen and (min-width: 980px) {
-    display: block;
-  }
-`
 
 export const GridContainer = styled(Container)`
   min-height: 50vh;

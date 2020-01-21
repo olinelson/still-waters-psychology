@@ -11,6 +11,7 @@ import {
 } from "semantic-ui-react";
 import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
 import Layout from '../components/layout'
+import ResponsiveTabs from "../components/ResponsiveTabs";
 
 export default function Research() {
    
@@ -1046,17 +1047,7 @@ export default function Research() {
         </p>
 
                 
-                <Tab
-
-                    menu={{
-                        fluid: true,
-                        // stackable: true,
-                        vertical: true
-                    }}
-                    panes={panes}
-                  
-
-                ></Tab>
+                <ResponsiveTabs panes={panes}/>
 
 
             </Container>
