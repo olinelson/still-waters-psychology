@@ -33,7 +33,7 @@ export default function ContactForm() {
       <Form
         style={{ margin: 'auto auto' }}
         onSubmit={ev => submitForm(ev)}
-        action="https://formspree.io/mlejevka"
+        action="https://formspree.io/xgevbzyl"
         method="POST"
         error={status === 'ERROR'}
         success={status === 'SUCCESS'}
@@ -43,14 +43,14 @@ export default function ContactForm() {
           required
           label="Full Name"
           name="name"
-          placeholder="Wolfgang Amadeus Mozart"
+          placeholder="Carl Jung"
         />
         <Form.Input
           required
           label="Email"
           name="email"
           type="email"
-          placeholder="wolfy@gmail.com"
+          placeholder="carl_jung@gmail.com"
         />
         <Form.Input
           required
@@ -58,6 +58,13 @@ export default function ContactForm() {
           name="phone"
           type="phone"
           placeholder="0400123123"
+        />
+
+        <Form.Input
+          required
+          label="Best Contact Time"
+          name="best contact time"
+          type="time"
         />
 
         <Form.TextArea
