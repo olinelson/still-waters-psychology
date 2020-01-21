@@ -44,14 +44,14 @@ export const Footer = styled.div`
 `
 export const MobileOnlyDiv = styled.div`
   display: none;
-  @media only screen and (max-width: 980px) {
+  @media screen and (max-width: 980px) {
     display: block;
   }
 `
 export const DesktopOnlyDiv = styled.div`
   display: none;
 
-  @media only screen and (min-width: 980px) {
+  @media screen and (min-width: 980px) {
     display: block;
   }
 `
