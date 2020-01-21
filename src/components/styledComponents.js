@@ -43,14 +43,15 @@ export const Footer = styled.div`
   background: #d3d3d3;
 `
 export const MobileOnlyDiv = styled.div`
-  display: block;
-  @media only screen and (min-width: 1024px) {
-    display: none;
+  display: none;
+  @media only screen and (max-width: 980px) {
+    display: block;
   }
 `
 export const DesktopOnlyDiv = styled.div`
   display: none;
-  @media only screen and (min-width: 1024px) {
+
+  @media only screen and (min-width: 980px) {
     display: block;
   }
 `
