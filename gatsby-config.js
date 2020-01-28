@@ -6,7 +6,7 @@ module.exports = {
     siteURL: 'https://olinelson.github.io',
     // siteURL: 'http://localhost:8000',
   },
-  pathPrefix: '/still-waters-gatsby',
+  pathPrefix: '/still-waters-psychology',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
