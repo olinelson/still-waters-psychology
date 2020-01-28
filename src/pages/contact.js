@@ -4,7 +4,6 @@ import ContactForm from '../components/ContactForm'
 
 import { Jumbotron } from '../components/StyledComponents'
 import pathImg from '../images/resources/image_16_Path.jpg'
-
 import {
   Embed,
   Container,
@@ -15,117 +14,88 @@ import {
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
+import { useStaticQuery, graphql } from 'gatsby'
+
 export default function Contact() {
-  const panels = [
-    // {
-    //   key: "0",
-    //   title: "Wheelchair Accessibility",
-    //   content:
-    //     "There is wheelchair access at the front entry to the practice and wheelchair accessible toilet facilities."
-    // },
-    {
-      key: '1',
-      title: 'Late Arrival Policy',
-      content:
-        'Where clients arrive late for a session, the session will still end at the scheduled time, meaning that session will be shorter on that occasion. Time has been reserved for you and only you at the agreed upon time, with other people are scheduled after your time. This approach ensures those attending after you are not kept waiting. Thank you for your understanding in relation to this matter.',
-    },
-    {
-      key: '3',
-      title: 'No Show Policy',
-      content:
-        'Where clients fail to attend an appointment and there is no communication regarding their absence the normal session fee will be applied.',
-    },
-    {
-      key: '5',
-      title: 'Cancellation policy',
+  const data = useStaticQuery(graphql`
+    query {
+      allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(contact)/" } }
+      ) {
+        nodes {
+          id
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+      startingTheJourney: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(startingTheJourney)/" } }
+      ) {
+        nodes {
+          id
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+      location: allMarkdownRemark(
+        filter: { fileAbsolutePath: { regex: "/(location)/" } }
+      ) {
+        nodes {
+          id
+          html
+          frontmatter {
+            title
+          }
+        }
+      }
+    }
+  `)
+
+  const startingTheJourney = (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: data.startingTheJourney.nodes[0].html,
+      }}
+    />
+  )
+  const location = (
+    <div
+      dangerouslySetInnerHTML={{
+        __html: data.location.nodes[0].html,
+      }}
+    />
+  )
+
+  const panels = data.allMarkdownRemark.nodes.map(p => {
+    return {
+      key: p.frontmatter.title,
+      title: p.frontmatter.title,
       content: {
-        content: (
-          <>
-            <p>
-              We respect that your time is valuable, and we appreciate that you
-              understand ours is too. Regretfully cancellation fees are
-              necessary as it unlikely that your spot can be given to another
-              client at such short note.
-            </p>
-            <ul>
-              <li>
-                A 90% cancellation fee will be applied when clients cancel
-                within 48 hours of their appointment.
-              </li>
-            </ul>
-
-            <p>
-              When cancelling a session, please advise as to the reason for the
-              cancellation. Please note Medicare do not reimburse cancelled
-              fees, while the NDIA cover a limited number of cancellation fees.
-              If you have concerns about this policy, please discuss them with
-              your therapist.
-            </p>
-
-            <p>
-              There are rare occasions when, with regret, your therapist needs
-              to cancel a session due to unexpected circumstances. Where this
-              occurs, you will be offered a replacement appointment at a
-              mutually convenient time, at the normal session fee. We apologise
-              for any inconvenience arising from these rare occasions.
-            </p>
-          </>
-        ),
+        content: <Container dangerouslySetInnerHTML={{ __html: p.html }} />,
       },
-    },
-  ]
+    }
+  })
 
   return (
     <Layout>
       <Jumbotron imgDir="images/image_16/" src={pathImg} />
-
+      <Divider hidden />
       <Container text>
+        {startingTheJourney}
+
         <Divider hidden />
-
-        <h1>Starting the journey</h1>
-
-        <h4>Booking the first appointment</h4>
-
-        <p>
-          Taking the first step towards improving the quality of your
-          psychological health, sense of wellbeing and relationships may feel
-          daunting, especially if you have no prior experience with counselling.{' '}
-        </p>
-
-        <p>
-          You can arrange an appointment by phoning{' '}
-          <a href="tel:0466231620">0466 231 620</a> or by sending an enquiry
-          using the form below.{' '}
-        </p>
-
-        <p>
-          We will guide you through setting up an initial appointment and will
-          happily answer any questions you might have about counselling/therapy.{' '}
-        </p>
 
         <ContactForm />
 
         <Divider />
 
-        <h1>Location</h1>
+        {location}
 
-        <p>
-          The practice is located just off Narellan Road, Narellan. When you
-          turn into Exchange Parade there is an entry driveway on the left
-          BEFORE the first roundabout. You will need to drive round the bend and
-          approximately half-way along the shop fronts to reach the practice
-          location. In the event you miss the first driveway, proceed to the
-          first roundabout, turn left and there is a 2nd entry driveway (on the
-          left).
-        </p>
-
-        <p>
-          The practice is housed within the Narellan Community Congregational
-          Church. Upon arrival, please enter the church foyer and turn left to
-          find the practice reception area. Please make yourself comfortable in
-          the waiting area. Please note the church reception desk is not always
-          occupied.
-        </p>
+        <Divider hidden />
 
         <Embed
           active

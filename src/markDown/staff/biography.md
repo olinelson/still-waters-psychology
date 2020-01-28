@@ -14,11 +14,11 @@ Insert bio image here – please don’t make it too large.
 
 Using a relationally focused, collaborative approach, I seek to co-create a safe therapeutic space where each client can explore his or her sense of well-being and bio-psycho-social and spiritual health. I have a keen interest in issues related to:
 
-• Human and Spiritual Attachment
-• Spirituality and Health
-• Carers’ Needs and Issues
-• Grief, Loss and Times of Change
-• Attachment and Complex Trauma
+- Human and Spiritual Attachment
+- Spirituality and Health
+- Carers’ Needs and Issues
+- Grief, Loss and Times of Change
+- Attachment and Complex Trauma
 
 As a result, my training, research and employment choices have all related in some way to these areas of interest (See Past Roles). For example, during my Master’ degree I trained in ‘The Conversational Model’, evidence-based psychodynamic training in Complex Trauma. During the same degree I submitted a research thesis exploring the relationship between early developmental trauma and adult Christian spirituality, this since published in the Journal of Spirituality and Mental Health. This work built on prior training and research in the areas of human and spiritual attachment.
 

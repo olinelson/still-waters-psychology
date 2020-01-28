@@ -14,7 +14,17 @@ function Nav({ siteTitle }) {
     </Menu.Item>
   )
   const fullMenu = () => (
-    <DesktopOnlyDiv style={{ margin: '0 auto 1rem auto', maxWidth: '100rem' }}>
+    <DesktopOnlyDiv
+      style={{
+        margin: '0 auto 1rem auto',
+        maxWidth: '100rem',
+        position: 'webkit-sticky',
+        position: 'sticky',
+        top: '0rem',
+        background: 'white',
+        zIndex: 1,
+      }}
+    >
       <Menu secondary pointing fluid onItemClick={() => setVisible(false)}>
         <LinkedItem to="/">{siteTitle}</LinkedItem>
         <Menu.Menu position="right">
@@ -43,7 +53,10 @@ function Nav({ siteTitle }) {
           width="thin"
           onItemClick={() => setVisible(false)}
         >
-          <Menu.Item onClick={() => setVisible(!visible)}>
+          <Menu.Item
+            onClick={() => setVisible(!visible)}
+            onTouchEnd={() => setVisible(!visible)}
+          >
             <Icon size="large" name="close" />
           </Menu.Item>
 
@@ -57,7 +70,10 @@ function Nav({ siteTitle }) {
 
         <Menu borderless fixed="top">
           <Menu.Menu position="left">
-            <Menu.Item onClick={() => navigate('/')}>
+            <Menu.Item
+              onClick={() => navigate('/')}
+              onTouchEnd={() => navigate('/')}
+            >
               {/* <h2>Still Waters</h2> */}
               <Image size="mini" src={blackLogo} />
             </Menu.Item>

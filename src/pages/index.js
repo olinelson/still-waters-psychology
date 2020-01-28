@@ -11,7 +11,6 @@ import {
 } from '../components/styledComponents'
 import Events from '../components/Events'
 import { Link } from 'gatsby'
-import NewsPreview from '../components/NewsPreview'
 import {
   Button,
   Container,
@@ -56,9 +55,9 @@ const IndexPage = ({ location }) => (
           stages."
         />
 
-        <Segment padded="very">
+        <Segment>
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '2rem' }}>
+            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
               "My vision is to support, equip and encourage individuals and
               communities to heal, grow and flourish"
             </p>
@@ -79,16 +78,16 @@ const IndexPage = ({ location }) => (
           trauma-informed and relationally focused models of care."
         />
 
-        <Segment padded="very">
+        <Segment>
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '2rem' }}>
+            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
               "When healing, growth and flourishing occurs, individuals have
               scope to realise their personal and professional potential, while
               communities become supportive, nurturing and caring spaces, able
               to respond in healthy and positive ways to the needs of its
               members.
             </p>
-            <p style={{ textAlign: 'center', fontSize: '2rem' }}>
+            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
               Positive change in the individual can filter through, helping to
               form healthier communities. In turn, healthy communities become
               the foundation of healthy nations”
@@ -152,7 +151,7 @@ const IndexPage = ({ location }) => (
       <Container text>
         <Segment padded="very">
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '2rem' }}>
+            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
               “I am committed to creating a safe and supportive space in which,
               together, client and therapist, can address the client’s needs and
               concerns. I value relationships and collaboration, these central
