@@ -55,7 +55,7 @@ function Nav({ siteTitle }) {
         >
           <Menu.Item
             onClick={() => setVisible(!visible)}
-            onTouchEnd={() => setVisible(!visible)}
+            onTouchStart={() => setVisible(!visible)}
           >
             <Icon size="large" name="close" />
           </Menu.Item>
@@ -72,7 +72,7 @@ function Nav({ siteTitle }) {
           <Menu.Menu position="left">
             <Menu.Item
               onClick={() => navigate('/')}
-              onTouchEnd={() => navigate('/')}
+              onTouchStart={() => navigate('/')}
             >
               {/* <h2>Still Waters</h2> */}
               <Image size="mini" src={blackLogo} />
