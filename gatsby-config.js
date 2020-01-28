@@ -3,10 +3,10 @@ const path = require(`path`)
 module.exports = {
   siteMetadata: {
     title: 'Still Waters Psychology',
-    siteURL: 'https://olinelson.github.io',
-    // siteURL: 'http://localhost:8000',
+    // siteURL: 'https://olinelson.github.io',
+    siteURL: 'http://stillwaterspsychology.com.au/',
   },
-  pathPrefix: '/still-waters-psychology',
+  // pathPrefix: '/still-waters-psychology',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
