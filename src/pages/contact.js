@@ -49,11 +49,7 @@ export default function Contact() {
             </p>
             <ul>
               <li>
-                A 60% cancellation fee will be applied when clients cancel
-                within 24 hours of their appointment.
-              </li>
-              <li>
-                A 40% cancellation fee will be applied when clients cancel
+                A 90% cancellation fee will be applied when clients cancel
                 within 48 hours of their appointment.
               </li>
             </ul>
