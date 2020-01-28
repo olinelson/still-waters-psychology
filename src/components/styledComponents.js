@@ -85,12 +85,14 @@ export const CreditContainer = styled.div`
 `
 
 export const MobileOnlyDiv = styled.div`
-  @media only screen and (min-width: 1024px) {
-    display: none !important;
+  display: none;
+  @media only screen and (max-width: 1024px) {
+    display: block;
   }
 `
 export const DesktopOnlyDiv = styled.div`
-  @media only screen and (max-width: 1024px) {
-    display: none !important;
+  display: none;
+  @media only screen and (min-width: 1024px) {
+    display: block;
   }
 `
