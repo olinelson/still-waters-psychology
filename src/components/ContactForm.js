@@ -33,7 +33,7 @@ export default function ContactForm() {
       <Form
         style={{ margin: 'auto auto' }}
         onSubmit={ev => submitForm(ev)}
-        action="https://formspree.io/xgevbzyl"
+        action="https://formspree.io/xwkokwgd"
         method="POST"
         error={status === 'ERROR'}
         success={status === 'SUCCESS'}
