@@ -28,6 +28,9 @@ const Layout = ({ children }) => (
           <Helmet
             lang="en"
             title={data.site.siteMetadata.title}
+            htmlAttributes={{
+              lang: 'en',
+            }}
             meta={[
               {
                 name: 'description',
