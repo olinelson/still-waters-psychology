@@ -1,6 +1,20 @@
 import styled from 'styled-components'
 import { Header, Container, Grid, Segment, Message } from 'semantic-ui-react'
 
+import { css } from 'styled-components'
+
+export const mobile = inner => css`
+  @media (max-width: ${1000 / 16}em) {
+    ${inner}
+  }
+`
+
+export const phone = inner => css`
+  @media (max-width: ${650 / 16}em) {
+    ${inner}
+  }
+`
+
 export const JumboHeader = styled(Header)`
   font-size: 5rem;
   color: white;
@@ -86,15 +100,16 @@ export const CreditContainer = styled.div`
 
 export const MobileOnlyDiv = styled.div`
   display: none;
-  @media only screen and (max-width: ${props => props.max || '1023px'}) {
+  @media only screen and (max-width: ${props =>
+      props.max || `${1000 / 16}em`}) {
     display: block;
   }
 `
 export const DesktopOnlyDiv = styled.div`
-  display: none;
-  @media only screen and (min-width: ${props => props.min || '1024px'}) {
-    display: block;
-  }
+  // display: none;
+  ${mobile(css`
+    display: none;
+  `)}
 `
 
 export const Quote = styled(Message)`
