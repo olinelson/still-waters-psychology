@@ -23,6 +23,7 @@ function Nav({ siteTitle }) {
         top: '0rem',
         background: 'white',
         zIndex: 1,
+        maxWidth: '100vw',
       }}
     >
       <Menu secondary pointing fluid onItemClick={() => setVisible(false)}>
