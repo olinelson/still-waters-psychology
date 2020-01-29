@@ -79,7 +79,7 @@ export default function ContactForm() {
         <Message
           success
           header="Message Sent"
-          content="Your email has been sent. Thankyou"
+          content="Your email has been sent. Thank you"
         />
         <Message
           error
