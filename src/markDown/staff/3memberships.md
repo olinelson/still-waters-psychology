@@ -1,5 +1,6 @@
 ---
 title: 'Memberships'
+order: 3,
 ---
 
 #Professional Memberships & Registrations

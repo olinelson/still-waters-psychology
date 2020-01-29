@@ -29,14 +29,16 @@ export default function Staff() {
     }
   `)
 
-  let panes = data.allMarkdownRemark.nodes.map(p => {
-    return {
-      menuItem: p.frontmatter.title,
-      render: () => (
-        <Container text dangerouslySetInnerHTML={{ __html: p.html }} />
-      ),
-    }
-  })
+  let panes = data.allMarkdownRemark.nodes
+    .sort((a, b) => (a.frontmatter.order = b.frontmatter.order))
+    .map(p => {
+      return {
+        menuItem: p.frontmatter.title,
+        render: () => (
+          <Container text dangerouslySetInnerHTML={{ __html: p.html }} />
+        ),
+      }
+    })
 
   // const memberships = () => {
   //   return (

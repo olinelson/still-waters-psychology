@@ -1,5 +1,6 @@
 ---
 title: 'Biography'
+order: 1,
 ---
 
 #Biography

@@ -27,14 +27,16 @@ export default function Services() {
     }
   `)
 
-  const panes = data.allMarkdownRemark.nodes.map(p => {
-    return {
-      menuItem: p.frontmatter.title,
-      render: () => (
-        <Container text dangerouslySetInnerHTML={{ __html: p.html }} />
-      ),
-    }
-  })
+  const panes = data.allMarkdownRemark.nodes
+    .sort((a, b) => a.frontmatter.order - b.frontmatter.order)
+    .map(p => {
+      return {
+        menuItem: p.frontmatter.title,
+        render: () => (
+          <Container text dangerouslySetInnerHTML={{ __html: p.html }} />
+        ),
+      }
+    })
 
   return (
     <Layout>

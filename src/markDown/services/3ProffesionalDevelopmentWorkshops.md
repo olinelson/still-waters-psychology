@@ -1,5 +1,6 @@
 ---
 title: 'Workshops & Presentations'
+order: 3,
 ---
 
 #Professional Development Workshops and Presentations
