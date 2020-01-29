@@ -75,7 +75,11 @@ function Nav({ siteTitle }) {
               onTouchStart={() => navigate('/')}
             >
               {/* <h2>Still Waters</h2> */}
-              <Image size="mini" src={blackLogo} />
+              <Image
+                size="mini"
+                alt="still water psychology logo"
+                src={blackLogo}
+              />
             </Menu.Item>
           </Menu.Menu>
           <Menu.Menu position="right">

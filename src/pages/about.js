@@ -54,7 +54,12 @@ export default function About() {
         </Segment>
 
         <Segment basic>
-          <Image centered size="big" src={motherChild} />
+          <Image
+            alt="mother standing with child on beach"
+            centered
+            size="big"
+            src={motherChild}
+          />
         </Segment>
 
         <Segment
@@ -98,7 +103,7 @@ export default function About() {
         />
 
         <Segment basic>
-          <Image centered size="big" src={boat} />
+          <Image alt="boat on still waters" centered size="big" src={boat} />
         </Segment>
 
         <Segment

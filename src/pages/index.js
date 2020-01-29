@@ -42,7 +42,7 @@ const IndexPage = ({ location }) => (
       <Jumbotron location={location} fullHeight src={stillWaters}>
         <JumboMessage>
           <JumboHeader size="huge" as={'h1'} inverted>
-            <Image src={whiteMainLogo} size="large" />
+            <Image src={whiteMainLogo} alt="still waters logo" size="large" />
           </JumboHeader>
         </JumboMessage>
       </Jumbotron>

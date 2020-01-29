@@ -26,9 +26,15 @@ const Layout = ({ children }) => (
       <SiteContainer>
         <div>
           <Helmet
+            lang="en"
             title={data.site.siteMetadata.title}
             meta={[
-              { name: 'description', content: 'Sample' },
+              {
+                name: 'description',
+
+                content:
+                  'Still Waters Psychology is an adult psychotherapy and psychology service, providing evidence-based care for a range of mental health conditions and life challenges, for adults of all ages and life stages.',
+              },
               {
                 name: 'viewport',
                 content: '"width=device-width,initial-scale=1"',
@@ -50,7 +56,6 @@ const Layout = ({ children }) => (
         <Divider hidden />
 
         <Segment textAlign="center" padded="very">
-          {/* <Image centered size="tiny" src="logos/logo.png" /> */}
           <h4>{data.site.siteMetadata.title}</h4>
 
           <List horizontal inverted={false} divided link size="small">
