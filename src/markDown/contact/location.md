@@ -1,5 +1,5 @@
 ---
-title: 'location'
+title: 'Location'
 ---
 
 #Location

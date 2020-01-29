@@ -3,7 +3,7 @@ import React from 'react'
 import ContactForm from '../components/ContactForm'
 
 import { Jumbotron } from '../components/StyledComponents'
-import pathImg from '../images/resources/image_16_Path.jpg'
+import pathImg from '../images/resources/contact.jpg'
 import {
   Embed,
   Container,
@@ -20,7 +20,7 @@ export default function Contact() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
-        filter: { fileAbsolutePath: { regex: "/(contact)/" } }
+        filter: { fileAbsolutePath: { regex: "/(contactPanels)/" } }
       ) {
         nodes {
           id

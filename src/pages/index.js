@@ -166,7 +166,7 @@ const IndexPage = ({ location }) => (
               “I am committed to creating a safe and supportive space in which,
               together, client and therapist, can address the client’s needs and
               concerns. I value relationships and collaboration, these central
-              to the way I engage with our clients”.
+              to the way I engage with my clients”.
             </p>
 
             <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
@@ -182,7 +182,7 @@ const IndexPage = ({ location }) => (
           <ul>
             <li>Spirituality and Mental Health </li>
             <li>Carers’ Health and Wellbeing</li>
-            <li>Grief, Loss and Times of Change</li>
+            <li>Bereavement, Grief, Loss and Times of Change</li>
             <li>Attachment and Complex Trauma</li>
           </ul>
 
@@ -201,7 +201,7 @@ const IndexPage = ({ location }) => (
               attachment, spirituality and health, grief and loss, Acceptance
               and Commitment Therapy, etc.
             </li>
-            <li>Community groups focused on general mental health.</li>
+            <li>Community groups - focused on general mental health.</li>
           </ul>
 
           <p>

@@ -26,9 +26,6 @@ include:
 
 4) I am a full member of the American Psychological Association (APA).
 
-5) I am an associate member of the Christian Counselling Association
-   (CCAA).
-
  <div class="ui divider hidden"></div>
 
 <div class="ui cards">
