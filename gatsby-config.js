@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: 'Still Waters Psychology',
     // siteURL: 'https://olinelson.github.io',
-    siteURL: 'http://stillwaterspsychology.com.au',
+    siteURL: 'https://stillwaterspsychology.com.au',
   },
   // pathPrefix: '/still-waters-psychology',
   plugins: [

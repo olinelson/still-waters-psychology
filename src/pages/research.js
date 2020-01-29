@@ -1043,7 +1043,7 @@ export default function Research() {
         <Layout>
             <Jumbotron
 
-                src={siteURL + '/static/images/image_7_Purple_flower.jpg'}
+                src={siteURL + '/images/image_7_Purple_flower.jpg'}
             ></Jumbotron>
             <Divider hidden />
             <Container >
