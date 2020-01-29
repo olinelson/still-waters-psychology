@@ -128,8 +128,6 @@ export default function About() {
           </blockquote>
         </JumboMessage>
       </Jumbotron>
-      <Divider hidden />
-      <FAQS />
     </Layout>
   )
 }

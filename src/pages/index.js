@@ -85,12 +85,9 @@ const IndexPage = ({ location }) => (
               scope to realise their personal and professional potential, while
               communities become supportive, nurturing and caring spaces, able
               to respond in healthy and positive ways to the needs of its
-              members.
-            </p>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
-              Positive change in the individual can filter through, helping to
-              form healthier communities. In turn, healthy communities become
-              the foundation of healthy nations”
+              members. Positive change in the individual can filter through,
+              helping to form healthier communities. In turn, healthy
+              communities become the foundation of healthy nations”
             </p>
 
             <figcaption style={{ fontSize: '1rem', textAlign: 'right' }}>
@@ -259,6 +256,9 @@ const IndexPage = ({ location }) => (
 
         {/* <CreditContainer></CreditContainer> */}
       </Jumbotron>
+
+      <Divider hidden />
+      <FAQS />
     </Layout>
   </>
 )
