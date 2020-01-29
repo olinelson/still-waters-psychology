@@ -112,7 +112,7 @@ export default function Research() {
                                     The Psycho-Social Review , International Program for
                                     Psycho-Social Health Research, Central Queensland University,
                                     Volume 4 (2),
-                  http://www.ipp-shr.cqu.edu.au/enews/psu/02040809/cf/{" "}
+                  http://www.ipp-shr.cqu.edu.au/enews/psu/02040809/cf/
                                 </p>
                                 <p>
                                     Proctor, M-T., Miner, M., McLean, L., Devenish, S., &
@@ -171,7 +171,7 @@ export default function Research() {
                                 Organization May Promote Healthy Recovery From Severe Burns
                                 Injury. Chapter 10. In John L. Hochheimer & Jane
                                 Fernandez-Goldborough (Eds), Spirituality in the 21st Century:
-                Conversation. Inter-Disciplinary Press.{" "}
+                Conversation. Inter-Disciplinary Press.
                             </p>
                             <p>
                                 McLean, L., & Proctor, M-T. (2013). The pilgrim road to human
@@ -305,13 +305,13 @@ export default function Research() {
                                 Proctor, M.T. (2009). Conversations about God: Spirituality and
                                 qualitative research approaches not so strange bedfellows. AQM
                                 2008 Conference Abstracts. International Journal of Qualitative
-                Methods, 8 (3), 17.{" "}
+                Methods, 8 (3), 17.
                             </p>
                             <p>
                                 Proctor, M.T. (2009). “On the outside looking in”: Reflections
                                 on working with vulnerable populations and with challenging
                                 topics. AQM 2008 Conference Abstracts. International Journal of
-                Qualitative Methods, 8 (3), 26.{" "}
+                Qualitative Methods, 8 (3), 26.
                             </p>
                             <p>
                                 Proctor, M.T., Stevens. M., Nagy, S., Lord, B., & O’Riordan, E.
@@ -446,7 +446,7 @@ export default function Research() {
                                 Proctor, M-T (2010) Spirituality in healthcare: Rising to the
                                 challenge. Invited speaker, Academic Seminar for Nepean Hospital
                                 Psychiatry and Allied Health Staff (Invited speaker), July 13,
-                Nepean Hospital: Sydney.{" "}
+                Nepean Hospital: Sydney.
                             </p>
                         </Table.Cell>
                     </Table.Row>
@@ -536,7 +536,7 @@ export default function Research() {
                                 symptoms in early adjustment to severe burn injury in adults?
                                 Peer-reviewed paper presented at the the 17th Congress of the
                                 International Society for Burn Injuries (ISBI), Sydney, October
-                12-16, 2014.{" "}
+                12-16, 2014.
                             </p>
                         </Table.Cell>
                     </Table.Row>
@@ -591,7 +591,7 @@ export default function Research() {
                                 promote healthy recovery from severe burns injury. Peer-reviewed
                                 paper presented at the Spirituality in the 21st Century: At the
                                 Interface of Theory, Praxis and Pedagogy 1st Global Conference,
-                Prague, Czech Republic, March 2011.{" "}
+                Prague, Czech Republic, March 2011.
                             </p>
                             <p>
                                 Miner, M., Dowson, M. & Proctor, M.T. (2011). Psychological
@@ -647,7 +647,7 @@ export default function Research() {
                                 Proctor, M-T. (2008). ‘On the outside looking in’: Reflections
                                 on working with vulnerable populations and with challenging
                                 topics. Peer-reviewed paper presented at the 9th Advances in
-                Qualitative Methods Conference, October 8-11, Banff, Canada.{" "}
+                Qualitative Methods Conference, October 8-11, Banff, Canada.
                             </p>
                             <p>
                                 Proctor, M-T. (2008). Conversations about God: Spirituality and
@@ -696,7 +696,7 @@ export default function Research() {
                                 adolescents speak of living and dying with a life limiting
                                 condition. Peer-reviewed paper presented at the Royal Australian
                                 & New Zealand College of Psychiatry (RANZCP) 2008 Congress, May
-                25-29, Melbourne.{" "}
+                25-29, Melbourne.
                             </p>
                             <p>
                                 Proctor, M-T., Nagy, S., Stevens, M., Lord, B., & O’Riordan, E.
@@ -704,7 +704,7 @@ export default function Research() {
                                 contribution of extended family members in families caring for
                                 children with life limiting conditions. Peer-reviewed paper
                                 presented at the Royal Australian & New Zealand College of
-                Psychiatry (RANZCP) 2008 Congress, May 25-29, Melbourne.{" "}
+                Psychiatry (RANZCP) 2008 Congress, May 25-29, Melbourne.
                             </p>
                             <p>
                                 Proctor, M-T., Stevens, M., Nagy, S., Lord, B., & O’Riordan, E.
@@ -719,7 +719,7 @@ export default function Research() {
                                 (2008). Giving ‘voice’ to families’ experiences of living with a
                                 paediatric life-limiting condition: An Australian story.
                                 Peer-reviewed paper presented at the 14th Qualitative Health
-                Research Conference, October 3-6, Banff, Canada.{" "}
+                Research Conference, October 3-6, Banff, Canada.
                             </p>
                             <p>
                                 Proctor, M-T., Stevens, M., Nagy, S., Lord, B., & O’Riordan, E.
@@ -812,7 +812,7 @@ export default function Research() {
                                 condition: Making the transition into the adult healthcare
                                 system. Paper presented at the 2006 Australia and New Zealand
                                 Society of Palliative Medicine Conference, 4-6 October,
-                Newcastle, Australia.{" "}
+                Newcastle, Australia.
                             </p>
                             <p>
                                 Stevens, M., Proctor, M-T., Nagy, S., Lord, B., & O’Riordan, E.
@@ -820,7 +820,7 @@ export default function Research() {
                                 condition: Exploring the experiences of parents - Mothers’
                                 accounts of their experiences with health care professionals;
                                 Paper presented at the 2006 Palliative Care Symposium, The
-                Children’s Hospital at Westmead, March 3, Sydney.{" "}
+                Children’s Hospital at Westmead, March 3, Sydney.
                             </p>
                         </Table.Cell>
                     </Table.Row>
@@ -848,7 +848,7 @@ export default function Research() {
                             Fatigue Syndrome/ Myalgic Encephalitis and their families: The
                             need to reduce health care inequities. Peer-reviewed paper
                             presented at the 8th Biennial International Paediatric and Child
-              Health Nurses’ Conference. September, Adelaide, S.A.{" "}
+              Health Nurses’ Conference. September, Adelaide, S.A.
                         </Table.Cell>
                     </Table.Row>
 
@@ -894,7 +894,7 @@ export default function Research() {
                                 Proctor, MT. (2008). Symposium title: Attachment to God
                                 (consisting of four papers): Spirituality, human development and
                                 well-being, UWS Psychology and Spirituality Society 2008
-                Conference, July 24-25, Sydney.{" "}
+                Conference, July 24-25, Sydney.
                             </p>
                             <p>
                                 McLean, L., & Proctor, M.T. (2008). Symposium title: Attachment
@@ -903,7 +903,7 @@ export default function Research() {
                                 relationship in the lives of our patients/clients as an
                                 attachment relationship (consisting of five papers). Royal
                                 Australian & New Zealand College of Psychiatry (RANZCP) 2008
-                Congress, May 25-29, Melbourne.{" "}
+                Congress, May 25-29, Melbourne.
                             </p>
                         </Table.Cell>
                     </Table.Row>
@@ -1013,7 +1013,7 @@ export default function Research() {
             render: () => symposiumConvener()
         },
         {
-            menuItem: "Invited Lectures and Presentations",
+            menuItem: "Lectures and Presentations",
             render: () => invitedLecturesAndPresentations()
         },
         {
@@ -1047,7 +1047,7 @@ export default function Research() {
         </p>
 
                 
-                <ResponsiveTabs panes={panes}/>
+                <ResponsiveTabs mobileBreakPoint="760px" desktopBreakPoint="761px" panes={panes}/>
 
 
             </Container>

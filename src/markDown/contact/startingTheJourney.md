@@ -8,7 +8,7 @@ title: 'Starting the journey'
 
 Taking the first step towards improving the quality of your
 psychological health, sense of wellbeing and relationships may feel
-daunting, especially if you have no prior experience with counselling.{' '}
+daunting, especially if you have no prior experience with counselling.
 
 You can arrange an appointment by phoning
 <a href="tel:0466231620">0466 231 620</a> or by sending an enquiry
