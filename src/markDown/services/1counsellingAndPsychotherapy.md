@@ -8,21 +8,28 @@ At Still Waters Psychology counselling and psychotherapy are offered for a range
 
 Still Waters Psychology also specialises in four key areas:
 
-###Spirituality and mental health
+<ul>
+<li>
+    <h4>Spirituality and mental health</h4>
 
-“I appreciate that an individual’s approach to life affects how he/she experiences and responds to life circumstances. I can help clients whose worldview is informed and framed by their faith, spirituality and/or religion, especially those with a Christian worldview, to explore and pursue health and wellbeing in ways that respect their beliefs and practices”.
+<i>“I appreciate that an individual’s approach to life affects how he/she experiences and responds to life circumstances. I can help clients whose worldview is informed and framed by their faith, spirituality and/or religion, especially those with a Christian worldview, to explore and pursue health and wellbeing in ways that respect their beliefs and practices”.
 
-###Carers’ health and wellbeing
+</i>
+</li>
 
-“I recognise that carers are often overlooked and that their health and wellbeing is crucial to their own longevity and the ongoing provision of support to those that they care for within their families and local communities. I offer a space where carers can take time to explore and reflect upon their own lives and experiences, recognising and acknowledging the demands and challenges of the carer role”.
+<li><h4>Carers’ health and wellbeing</h4>
 
-###Bereavement, Grief, Loss and Times of Change
+<i>“I recognise that carers are often overlooked and that their health and wellbeing is crucial to their own longevity and the ongoing provision of support to those that they care for within their families and local communities. I offer a space where carers can take time to explore and reflect upon their own lives and experiences, recognising and acknowledging the demands and challenges of the carer role”.</i></li>
 
-“I realise that life is in constant flux, change often confronting, especially when unexpected. Change can take many forms, some significant changes experienced as a loss with accompanying grief. Whether dealing with illness, disability, death of a loved one, changes in health, relationship, employment or in other areas of your personal or professional life, I can support you through this time of transition".
+<li><h4>Bereavement, Grief, Loss and Times of Change</h4>
 
-###Attachment and Complex Trauma
+<i>“I realise that life is in constant flux, change often confronting, especially when unexpected. Change can take many forms, some significant changes experienced as a loss with accompanying grief. Whether dealing with illness, disability, death of a loved one, changes in health, relationship, employment or in other areas of your personal or professional life, I can support you through this time of transition".</i></li>
 
-“Enduring trauma adversely affects all areas of an individual’s life, whether its trauma persisting from childhood or arising from more current life events. Working in collaborative partnership with you and your other healthcare professionals (e.g. GP), I seek to create a safe, caring and stable space in which you can address the ongoing effects of trauma in your life. I recognise that often significant relationships have been affected by trauma, working with clients on how they relate to and connect with themselves, others and the world around them in healthier ways”.
+<li><h4>Attachment and Complex Trauma</h4>
+<i>
+“Enduring trauma adversely affects all areas of an individual’s life, whether its trauma persisting from childhood or arising from more current life events. Working in collaborative partnership with you and your other healthcare professionals (e.g. GP), I seek to create a safe, caring and stable space in which you can address the ongoing effects of trauma in your life. I recognise that often significant relationships have been affected by trauma, working with clients on how they relate to and connect with themselves, others and the world around them in healthier ways”.</i></li>
+
+</ul>
 
 Therapy is tailored to each client, with the length of time in therapy guided by each client’s unique history, personal needs and concerns, therapeutic aims and life goals. While some clients have complex personal histories, which may take time to address, other clients face short-term challenges which are resolved in a briefer timeframe. As such, no two client therapy journeys are the same. More broadly, counselling involves an active, collaborative, conversational partnership, wherein the therapist works for the benefit of each client, individual circumstances considered within a developmentally oriented, lifespan perspective. Drawing upon contemporary evidence-based, trauma-informed models of care set within a lifespan perspective, there is an overall focus on client safety, symptom stabilization and management, recovery and integration, restoration and transformation. As a team, the client and therapist work together to achieve each client’s personal therapy goals.
 
