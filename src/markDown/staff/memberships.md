@@ -29,28 +29,31 @@ include:
 5) I am an associate member of the Christian Counselling Association
    (CCAA).
 
- <div class="ui divider hidden"/>
+ <div class="ui divider hidden"></div>
 
 <div class="ui cards">
 
 <div class="ui card">
-    <a href="https://www.humanservices.gov.au/organisations/health-professionals?utm_id=9">
-    <img src="https://stillwaterspsychology.com.au/logos/medicare.jpg"  class="ui medium centered image" />
+    <a style="margin: auto 1rem" href="https://www.humanservices.gov.au/organisations/health-professionals?utm_id=9">
+    <img src="https://stillwaterspsychology.com.au/logos/medicare.jpg"  class="ui medium centered middle aligned image" >
     </a>
 </div>
+
 <div class="ui card">
-    <a href="https://www.ahpra.gov.au/">
-    <img src="https://stillwaterspsychology.com.au/logos/ahpra.png"  class="ui medium centered image" />
+    <a style="margin: auto 1rem" href="https://www.ahpra.gov.au/">
+    <img src="https://stillwaterspsychology.com.au/logos/ahpra.png"  class="ui medium centered middle aligned image" >
     </a>
 </div>
+
 <div class="ui card">
-    <a href="https://www.psychology.org.au/">
-    <img src="https://stillwaterspsychology.com.au/logos/aps.jpeg"  class="ui medium centered image" />
+    <a style="margin: auto 1rem" href="https://www.psychology.org.au/">
+    <img src="https://stillwaterspsychology.com.au/logos/aps.jpeg"  class="ui medium centered middle aligned image" >
     </a>
 </div>
+
 <div class="ui card">
-    <a  href="https://www.apa.org/index">
-    <img src="https://stillwaterspsychology.com.au/logos/apa.png"  class="ui medium centered image" />
+    <a style="margin: auto 1rem"  href="https://www.apa.org/index">
+    <img src="https://stillwaterspsychology.com.au/logos/apa.png"  class="ui medium centered middle aligned image" >
     </a>
 </div>
 

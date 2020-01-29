@@ -67,7 +67,7 @@ export default function FAQS() {
   ]
 
   return (
-    <Container text>
+    <Container>
       <Segment basic size="big">
         <Header as="h1" content="Additional Information" />
         <Accordion defaultActiveIndex={0} fluid styled panels={panels} />

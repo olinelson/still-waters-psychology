@@ -6,3 +6,30 @@
     display: none;
   }
 }
+/* 
+blockquote {
+  position: relative;
+  padding-left: 1em;
+  border-left: 0.2em solid #fbde4b;
+  font-size: 2.4em;
+  line-height: 1.5em;
+  font-weight: 100;
+}
+.ludwig:before,
+.ludwig:after {
+  content: '\201C';
+  font-family: 'Sanchez';
+  color: #fbde4b;
+}
+.ludwig:after {
+  content: '\201D';
+} */
+
+blockquote p {
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+blockquote figcaption {
+  text-align: right;
+}

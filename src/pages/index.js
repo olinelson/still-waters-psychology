@@ -8,6 +8,7 @@ import {
   CenteredGridColumn,
   ImageDiv,
   CreditContainer,
+  Quote,
 } from '../components/styledComponents'
 import Events from '../components/Events'
 import { Link } from 'gatsby'
@@ -20,6 +21,8 @@ import {
   Segment,
   List,
   Header,
+  Icon,
+  Message,
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
@@ -45,64 +48,74 @@ const IndexPage = ({ location }) => (
       </Jumbotron>
       <Divider hidden />
 
-      <Container text>
+      <Container>
         <Segment
           size="big"
           basic
-          content="Still Waters Psychology is an adult psychotherapy and psychology
-          service, providing evidence-based care for a range of mental health
-          conditions and life challenges, for adults of all ages and life
-          stages."
+          content={
+            <p>
+              Still Waters Psychology is an adult psychotherapy and psychology
+              service, providing evidence-based care for a range of mental
+              health conditions and life challenges, for adults of all ages and
+              life stages.
+            </p>
+          }
         />
+        {/* <Quote backgroundColor="#8AC9D8" fontColor="white" inverted> */}
 
-        <Segment>
+        <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
+          <Icon size="large" name="quote left" />
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
-              "My vision is to support, equip and encourage individuals and
-              communities to heal, grow and flourish"
+            <p>
+              My vision is to support, equip and encourage individuals and
+              communities to heal, grow and flourish
             </p>
 
-            <figcaption style={{ fontSize: '1rem', textAlign: 'right' }}>
-              &mdash; Dr Marie-Thérèse Proctor
-            </figcaption>
+            <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
           </blockquote>
-        </Segment>
-
-        {/* <Divider /> */}
+        </Quote>
+        {/* </Quote> */}
 
         <Segment
           size="big"
           basic
-          content="To achieve this vision, Still Waters Psychology has a strengths-based,
-          recovery-oriented focus in its provision of care, guided by
-          trauma-informed and relationally focused models of care."
+          content={
+            <p>
+              To achieve this vision, Still Waters Psychology has a
+              strengths-based, recovery-oriented focus in its provision of care,
+              guided by trauma-informed and relationally focused models of care.
+            </p>
+          }
         />
 
-        <Segment>
+        <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
+          <Icon size="large" name="quote left" />
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
-              "When healing, growth and flourishing occurs, individuals have
+            <p>
+              When healing, growth and flourishing occurs, individuals have
               scope to realise their personal and professional potential, while
               communities become supportive, nurturing and caring spaces, able
               to respond in healthy and positive ways to the needs of its
               members. Positive change in the individual can filter through,
               helping to form healthier communities. In turn, healthy
-              communities become the foundation of healthy nations”
+              communities become the foundation of healthy nations
             </p>
 
-            <figcaption style={{ fontSize: '1rem', textAlign: 'right' }}>
-              &mdash; Dr Marie-Thérèse Proctor
-            </figcaption>
+            <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
           </blockquote>
-        </Segment>
+        </Quote>
 
         <Segment
           basic
           size="big"
-          content=" Still Waters Psychology can support people of varied worldviews and
-          perspectives to live life in ways which align with their personal
-          values, beliefs and life goals. As part of this process clients are
-          encouraged to foster:"
+          content={
+            <p>
+              Still Waters Psychology can support people of varied worldviews
+              and perspectives to live life in ways which align with their
+              personal values, beliefs and life goals. As part of this process
+              clients are encouraged to foster:
+            </p>
+          }
         />
       </Container>
 
@@ -145,21 +158,20 @@ const IndexPage = ({ location }) => (
         </Grid>
       </Segment>
 
-      <Container text>
-        <Segment padded="very">
+      <Container>
+        <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
+          <Icon size="large" name="quote left" />
           <blockquote style={{ color: 'inherit' }}>
-            <p style={{ textAlign: 'center', fontSize: '1.5rem' }}>
+            <p>
               “I am committed to creating a safe and supportive space in which,
               together, client and therapist, can address the client’s needs and
               concerns. I value relationships and collaboration, these central
               to the way I engage with our clients”.
             </p>
 
-            <figcaption style={{ fontSize: '1rem', textAlign: 'right' }}>
-              &mdash; Dr Marie-Thérèse Proctor
-            </figcaption>
+            <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
           </blockquote>
-        </Segment>
+        </Quote>
 
         <Segment size="big" basic>
           <h1>Practice Specialisations</h1>

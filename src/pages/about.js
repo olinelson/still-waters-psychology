@@ -8,6 +8,7 @@ import {
   CreditContainer,
   ImageDiv,
   CenteredGridColumn,
+  Quote,
 } from '../components/StyledComponents'
 
 import {
@@ -34,7 +35,7 @@ export default function About() {
   return (
     <Layout>
       <Jumbotron src={wharf}></Jumbotron>
-      <Container text>
+      <Container>
         <Segment basic size="large">
           <h1>Still Waters</h1>
           <p>
@@ -53,56 +54,67 @@ export default function About() {
         </Segment>
 
         <Segment basic>
-          <Image centered size="large" src={motherChild} />
+          <Image centered size="big" src={motherChild} />
         </Segment>
 
         <Segment
           basic
           size="big"
-          content=" In psychological terms, ‘still waters’ is a metaphor for
-          ‘self-regulation’: having a stable and coherent sense of self; being
-          able to reflectively move through life in ways that result in rich,
-          purposeful living; flexible and adaptive in the face of the
-          unexpected.
-        "
+          content={
+            <p>
+              In psychological terms, ‘still waters’ is a metaphor for
+              ‘self-regulation’: having a stable and coherent sense of self;
+              being able to reflectively move through life in ways that result
+              in rich, purposeful living; flexible and adaptive in the face of
+              the unexpected.
+            </p>
+          }
         />
 
-        <Segment>
-          <blockquote style={{ color: 'black', fontSize: '2rem' }}>
+        <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
+          <blockquote>
             {/* <Icon size='large' name='quote left' /> */}
-            <p style={{ textAlign: 'center' }}>
+            <p style={{ textAlign: 'center', fontSize: '2rem' }}>
               still waters is a metaphor for self-regulation
             </p>
           </blockquote>
-        </Segment>
+        </Quote>
 
         <Segment
           basic
           size="big"
-          content=" When faced with difficult situations and accompanying challenging
-          thoughts and feelings, it is easy to become overwhelmed and
-        distressed, unable to acts in ways aligned to one’s personal and
-        professional values and beliefs. At these times it can feel like we
-        are caught on a choppy ocean, at the mercy of the waves that buffet
-        us. Therapy provided in a caring, secure and supportive context allows
-        the individual to safely explore and address issues currently
-        affecting his/her life."
+          content={
+            <p>
+              When faced with difficult situations and accompanying challenging
+              thoughts and feelings, it is easy to become overwhelmed and
+              distressed, unable to acts in ways aligned to one’s personal and
+              professional values and beliefs. At these times it can feel like
+              we are caught on a choppy ocean, at the mercy of the waves that
+              buffet us. Therapy provided in a caring, secure and supportive
+              context allows the individual to safely explore and address issues
+              currently affecting his/her life.
+            </p>
+          }
         />
 
         <Segment basic>
-          <Image centered size="large" src={boat} />
+          <Image centered size="big" src={boat} />
         </Segment>
 
         <Segment
           basic
           size="big"
-          content="
-          In the opening verses of Psalm 23 (1-3), Christian believers are told
-          that restoration of the soul comes in the context of ‘green pastures’
-          and ‘still waters’ – the Divine drawing the weary and the wounded to a
-          quiet place where restoration is possible. Therapy that takes into
-          consideration one’s worldview helps individuals address life issues in
-          ways that align with their life values."
+          content={
+            <p>
+              In the opening verses of Psalm 23 (1-3), Christian believers are
+              told that restoration of the soul comes in the context of ‘green
+              pastures’ and ‘still waters’ – the Divine drawing the weary and
+              the wounded to a quiet place where restoration is possible.
+              Therapy that takes into consideration one’s worldview helps
+              individuals address life issues in ways that align with their life
+              values.
+            </p>
+          }
         />
 
         <Divider hidden />

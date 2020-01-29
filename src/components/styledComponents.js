@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Header, Container, Grid } from 'semantic-ui-react'
+import { Header, Container, Grid, Segment, Message } from 'semantic-ui-react'
 
 export const JumboHeader = styled(Header)`
   font-size: 5rem;
@@ -95,4 +95,11 @@ export const DesktopOnlyDiv = styled.div`
   @media only screen and (min-width: 1024px) {
     display: block;
   }
+`
+
+export const Quote = styled(Message)`
+  background-color: ${props => props.backgroundColor} !important;
+  color: ${props => props.textColor} !important;
+  box-shadow: ${props =>
+    `0px 0px 0px 1px ${props.textColor}, 0px 0px 0px 0px rgba(0, 0, 0, 0)!important`};
 `
