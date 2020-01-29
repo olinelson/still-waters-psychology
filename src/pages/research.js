@@ -9,11 +9,24 @@ import {
     Responsive,
     Header
 } from "semantic-ui-react";
-import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
+import {graphql, useStaticQuery} from 'gatsby'
+// import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
 import Layout from '../components/layout'
 import ResponsiveTabs from "../components/ResponsiveTabs";
 
 export default function Research() {
+
+    const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          siteURL
+        }
+      }
+    }
+  `)
+
+    const siteURL = data.site.siteMetadata.siteURL
    
 
     const articles = () => {
@@ -1029,7 +1042,8 @@ export default function Research() {
     return (
         <Layout>
             <Jumbotron
-                src={purpleFlower}
+
+                src={siteURL + '/static/images/image_7_Purple_flower.jpg'}
             ></Jumbotron>
             <Divider hidden />
             <Container >
