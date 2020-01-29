@@ -42,8 +42,9 @@ export default function Services() {
     <Layout>
       <Jumbotron src={sunsetWithRocks}></Jumbotron>
       <Divider hidden />
-
-      <ResponsiveTabs panes={panes} />
+      <Container>
+        <ResponsiveTabs panes={panes} />
+      </Container>
     </Layout>
   )
 }

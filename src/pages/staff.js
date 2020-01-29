@@ -121,8 +121,9 @@ export default function Staff() {
       <Jumbotron src={waterDrops}></Jumbotron>
       <Divider hidden />
       <div ref={topOfTabRef} />
-
-      <ResponsiveTabs panes={panes} />
+      <Container>
+        <ResponsiveTabs panes={panes} />
+      </Container>
     </Layout>
   )
 }

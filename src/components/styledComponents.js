@@ -14,6 +14,11 @@ export const phone = inner => css`
     ${inner}
   }
 `
+export const desktop = inner => css`
+  @media (min-width: ${1000 / 16}em) {
+    ${inner}
+  }
+`
 
 export const JumboHeader = styled(Header)`
   font-size: 5rem;
@@ -99,11 +104,10 @@ export const CreditContainer = styled.div`
 `
 
 export const MobileOnlyDiv = styled.div`
-  display: none;
-  @media only screen and (max-width: ${props =>
-      props.max || `${1000 / 16}em`}) {
-    display: block;
-  }
+  // display: none;
+  ${desktop(css`
+    display: none;
+  `)}
 `
 export const DesktopOnlyDiv = styled.div`
   // display: none;

@@ -7,7 +7,8 @@ import {
     Label,
     Tab,
     Responsive,
-    Header
+    Header,
+    Segment
 } from "semantic-ui-react";
 import {graphql, useStaticQuery} from 'gatsby'
 // import purpleFlower from '../images/resources/image_7_Purple_flower.jpg'
@@ -1026,15 +1027,15 @@ export default function Research() {
             render: () => symposiumConvener()
         },
         {
-            menuItem: "Lectures and Presentations",
+            menuItem: "Lectures & Presentations",
             render: () => invitedLecturesAndPresentations()
         },
         {
-            menuItem: "Conference Presentations",
+            menuItem: "Presentations",
             render: () => conferencePresentations()
         },
         {
-            menuItem: "Conference Posters",
+            menuItem: "Posters",
             render: () => conferencePosters()
         }
     ];
@@ -1046,8 +1047,9 @@ export default function Research() {
                 src={siteURL + '/images/image_7_Purple_flower.jpg'}
             ></Jumbotron>
             <Divider hidden />
-            <Container >
+
                 <Header as={'h1'} textAlign="center">Research</Header>
+                <Segment basic size="large">
                 <p>
                     Engaging in research is an important aspect of academic life. Below
                     are listed publications and presentations arising from this work (both
@@ -1061,10 +1063,12 @@ export default function Research() {
         </p>
 
                 
-                <ResponsiveTabs mobileBreakPoint="760px" desktopBreakPoint="761px" panes={panes}/>
+            </Segment>
+                
 
 
-            </Container>
+            <ResponsiveTabs mobileBreakPoint="760px" desktopBreakPoint="761px" panes={panes} />
+            
         </Layout>
     );
 }

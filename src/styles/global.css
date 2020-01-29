@@ -6,6 +6,10 @@
     display: none;
   }
 }
+
+div.ui.compact.fluid.stackable.menu {
+  overflow-x: scroll !important;
+}
 /* 
 blockquote {
   position: relative;

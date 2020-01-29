@@ -4,34 +4,44 @@ import { MobileOnlyDiv, DesktopOnlyDiv } from './StyledComponents'
 
 export default ({ panes, mobileBreakPoint, desktopBreakPoint }) => {
   return (
-    <Container style={{ minHeight: '50vh' }}>
-      <MobileOnlyDiv max={mobileBreakPoint}>
+    <div style={{ minHeight: '50vh', margin: '1rem' }}>
+      <DesktopOnlyDiv>
         <Tab
           menu={{
             fluid: true,
             stackable: true,
-            // vertical: true,
-            stackable: true,
+            vertical: true,
+            // fixed: 'bottom',
             // tabular: true,
             compact: true,
           }}
           stackable
           panes={panes}
         />
-      </MobileOnlyDiv>
-      <DesktopOnlyDiv min={desktopBreakPoint}>
+      </DesktopOnlyDiv>
+      <MobileOnlyDiv>
         <Tab
           menu={{
+            style: {
+              maxWidth: '100% !important',
+
+              // border: '1px solid red',
+              // width: '100vw !important',
+              // margin: '0 -1rem !important',
+            },
+
+            compact: true,
             fluid: true,
             stackable: true,
-            vertical: true,
+            vertical: false,
+            // secondary: true,
+            // fixed: 'bottom',
             // tabular: true,
-            // compact: true,
           }}
           stackable
           panes={panes}
         />
-      </DesktopOnlyDiv>
-    </Container>
+      </MobileOnlyDiv>
+    </div>
   )
 }
