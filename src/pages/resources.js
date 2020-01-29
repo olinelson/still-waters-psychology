@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Card, Divider, List, Segment } from 'semantic-ui-react'
-import { Jumbotron } from '../components/StyledComponents'
+import { Jumbotron } from '../components/MyStyledComponents'
 import Layout from '../components/layout'
 
 import blueWater from '../images/resources/image_18_Blue_water.jpg'

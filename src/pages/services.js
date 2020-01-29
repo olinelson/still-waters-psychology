@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react'
-import { Jumbotron } from '../components/StyledComponents'
+import { Jumbotron } from '../components/MyStyledComponents'
 import { Container, Image, Divider, Tab, Responsive } from 'semantic-ui-react'
 import { useStaticQuery, graphql } from 'gatsby'
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 import ContactForm from '../components/ContactForm'
 
-import { Jumbotron } from '../components/StyledComponents'
+import { Jumbotron } from '../components/MyStyledComponents'
 import pathImg from '../images/resources/contact.jpg'
 import {
   Embed,

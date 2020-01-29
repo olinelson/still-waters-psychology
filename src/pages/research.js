@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import { Jumbotron } from "../components/StyledComponents";
+import { Jumbotron } from "../components/MyStyledComponents";
 import {
     Container,
     Divider,

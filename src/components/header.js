@@ -3,7 +3,7 @@ import { Link, navigate } from 'gatsby'
 import { Menu, Sidebar, Icon, Image, Responsive } from 'semantic-ui-react'
 
 import blackLogo from '../images/logos/black_logo.svg'
-import { MobileOnlyDiv, DesktopOnlyDiv } from './styledComponents'
+import { MobileOnlyDiv, DesktopOnlyDiv } from './MyStyledComponents'
 
 function Nav({ siteTitle }) {
   const [visible, setVisible] = useState(false)

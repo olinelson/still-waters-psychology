@@ -9,7 +9,7 @@ import {
   ImageDiv,
   CreditContainer,
   Quote,
-} from '../components/styledComponents'
+} from '../components/MyStyledComponents'
 import Events from '../components/Events'
 import { Link } from 'gatsby'
 import {

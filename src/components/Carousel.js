@@ -4,7 +4,7 @@ import { Icon } from 'semantic-ui-react'
 import styled from 'styled-components'
 import { graphql, useStaticQuery } from 'gatsby'
 import Carousel from 'nuka-carousel'
-import { CarouselImage } from '../components/styledComponents'
+import { CarouselImage } from '../components/MyStyledComponents'
 
 export default function CarouselComponent() {
   const data = useStaticQuery(graphql`

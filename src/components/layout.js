@@ -8,7 +8,7 @@ import Header from './header'
 
 import 'semantic-ui-less/semantic.less'
 
-import { SiteContainer } from '../components/styledComponents'
+import { SiteContainer } from '../components/MyStyledComponents'
 
 const Layout = ({ children }) => (
   <StaticQuery

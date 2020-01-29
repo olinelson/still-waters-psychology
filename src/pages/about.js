@@ -9,7 +9,7 @@ import {
   ImageDiv,
   CenteredGridColumn,
   Quote,
-} from '../components/StyledComponents'
+} from '../components/MyStyledComponents'
 
 import {
   Embed,

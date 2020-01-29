@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Tab, Responsive } from 'semantic-ui-react'
-import { MobileOnlyDiv, DesktopOnlyDiv } from './StyledComponents'
+import { MobileOnlyDiv, DesktopOnlyDiv } from './MyStyledComponents'
 
 export default ({ panes, mobileBreakPoint, desktopBreakPoint }) => {
   return (
