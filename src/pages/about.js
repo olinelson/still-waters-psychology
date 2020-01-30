@@ -1,29 +1,13 @@
 import React from 'react'
 
-import ContactForm from '../components/ContactForm'
 import {
-  JumboHeader,
   JumboMessage,
   Jumbotron,
-  CreditContainer,
-  ImageDiv,
-  CenteredGridColumn,
   Quote,
 } from '../components/MyStyledComponents'
 
-import {
-  Embed,
-  Container,
-  Button,
-  Divider,
-  Header,
-  Accordion,
-  Segment,
-  Responsive,
-  Image,
-} from 'semantic-ui-react'
+import { Container, Divider, Segment, Image } from 'semantic-ui-react'
 import Layout from '../components/layout'
-import FAQS from '../components/Faqs'
 // images
 import wharf from '../images/resources/wharf.jpg'
 import boat from '../images/resources/boat.png'

@@ -1,8 +1,8 @@
 import React from 'react'
-import { Container, Tab, Responsive } from 'semantic-ui-react'
+import { Tab } from 'semantic-ui-react'
 import { MobileOnlyDiv, DesktopOnlyDiv } from './MyStyledComponents'
 
-export default ({ panes, mobileBreakPoint, desktopBreakPoint }) => {
+export default ({ panes }) => {
   return (
     <div style={{ minHeight: '50vh', margin: '1rem' }}>
       <DesktopOnlyDiv>
@@ -11,8 +11,7 @@ export default ({ panes, mobileBreakPoint, desktopBreakPoint }) => {
             fluid: true,
             stackable: true,
             vertical: true,
-            // fixed: 'bottom',
-            // tabular: true,
+
             compact: true,
           }}
           stackable
@@ -24,19 +23,12 @@ export default ({ panes, mobileBreakPoint, desktopBreakPoint }) => {
           menu={{
             style: {
               maxWidth: '100% !important',
-
-              // border: '1px solid red',
-              // width: '100vw !important',
-              // margin: '0 -1rem !important',
             },
 
             compact: true,
             fluid: true,
             stackable: true,
             vertical: false,
-            // secondary: true,
-            // fixed: 'bottom',
-            // tabular: true,
           }}
           stackable
           panes={panes}

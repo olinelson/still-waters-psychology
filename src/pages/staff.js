@@ -1,15 +1,11 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { Jumbotron } from '../components/MyStyledComponents'
 import { graphql, useStaticQuery } from 'gatsby'
-import { Container, Divider, Card } from 'semantic-ui-react'
+import { Container, Divider } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
 // images
 import waterDrops from '../images/resources/image_11_Water_drops_1.jpg'
-import medicare from '../images/logos/medicare.jpg'
-import ahpra from '../images/logos/ahpra.png'
-import aps from '../images/logos/aps.jpeg'
-import apa from '../images/logos/apa.png'
 import ResponsiveTabs from '../components/ResponsiveTabs'
 
 export default function Staff() {

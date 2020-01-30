@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link, navigate } from 'gatsby'
-import { Menu, Sidebar, Icon, Image, Responsive } from 'semantic-ui-react'
+import { Menu, Sidebar, Icon, Image } from 'semantic-ui-react'
 
 import blackLogo from '../images/logos/black_logo.svg'
 import { MobileOnlyDiv, DesktopOnlyDiv } from './MyStyledComponents'
@@ -18,12 +18,12 @@ function Nav({ siteTitle }) {
       style={{
         margin: '0 auto 1rem auto',
         maxWidth: '100rem',
-        position: 'webkit-sticky',
+        // position: 'webkit-sticky',
         position: 'sticky',
         top: '0rem',
         background: 'white',
         zIndex: 1,
-        maxWidth: '100vw',
+        // maxWidth: '100vw',
       }}
     >
       <Menu secondary pointing fluid onItemClick={() => setVisible(false)}>

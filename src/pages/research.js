@@ -1,12 +1,9 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Jumbotron } from "../components/MyStyledComponents";
 import {
-    Container,
     Divider,
     Table,
     Label,
-    Tab,
-    Responsive,
     Header,
     Segment
 } from "semantic-ui-react";
@@ -300,96 +297,6 @@ export default function Research() {
         );
     };
 
-    const publicPeerReviewAbstracts = () => {
-        return (
-            <Table>
-                <Table.Header>
-                    <Table.Row verticalAlign='top'>
-                        <Table.HeaderCell>Year</Table.HeaderCell>
-                        <Table.HeaderCell>Publication Details</Table.HeaderCell>
-                    </Table.Row>
-                </Table.Header>
-                <Table.Body>
-                    <Table.Row verticalAlign='top'>
-                        <Table.Cell>
-                            <Label ribbon>2009</Label>
-                        </Table.Cell>
-                        <Table.Cell>
-                            <p>
-                                Proctor, M.T. (2009). Conversations about God: Spirituality and
-                                qualitative research approaches not so strange bedfellows. AQM
-                                2008 Conference Abstracts. International Journal of Qualitative
-                Methods, 8 (3), 17.
-                            </p>
-                            <p>
-                                Proctor, M.T. (2009). “On the outside looking in”: Reflections
-                                on working with vulnerable populations and with challenging
-                                topics. AQM 2008 Conference Abstracts. International Journal of
-                Qualitative Methods, 8 (3), 26.
-                            </p>
-                            <p>
-                                Proctor, M.T., Stevens. M., Nagy, S., Lord, B., & O’Riordan, E.
-                                (2009). Giving ‘voice’ to families’ experiences of living with a
-                                paediatric life-limiting conditions: An Australian story. QHR
-                                2008 Conference Abstracts. International Journal of Qualitative
-                                Methods, 8 (3), 6.
-              </p>
-                        </Table.Cell>
-                    </Table.Row>
-                    <Table.Row verticalAlign='top'>
-                        <Table.Cell>
-                            <Label ribbon>2009</Label>
-                        </Table.Cell>
-                        <Table.Cell>
-                            Miner, M., Proctor, M-T., & Dowson, M. (Eds) (2009). Spirituality
-                            in Australia, Volume 2: Directions and Applications, ACSS/CHILD:
-                            Sydney.
-            </Table.Cell>
-                    </Table.Row>
-                    <Table.Row verticalAlign='top'>
-                        <Table.Cell>
-                            <Label ribbon>2008</Label>
-                        </Table.Cell>
-                        <Table.Cell>
-                            <p>
-                                Proctor, M-T., & McLean, L. (2008). Assessing Attachment to God
-                                And Spirituality As An Aspect Of Psychological Health And
-                                Wellbeing. Australian and New Zealand Journal of Psychiatry, 42
-                                (Suppl. 1): A34.
-              </p>
-                            <p>
-                                Proctor, M-T., Miner, M., & Dowson, M. (2008). Attachment To
-                                God, Spiritual Maturity And Psychological Health. Australian and
-                                New Zealand Journal of Psychiatry, 42(Suppl. 1): A34
-              </p>
-                            <p>
-                                Proctor, M-T., Nagy, S., Stevens, M., Lord, B., & O’Riordan, L.
-                                (2008). Out Of The Mouth Of Babes: Australian Children And
-                                Adolescents Speak Of Living And Dying With A Life Limiting
-                                Condition. Australian and New Zealand Journal of Psychiatry, 42
-                                (Suppl. 1): A104.
-              </p>
-                            <p>
-                                Proctor, M-T., Nagy, S., Stevens, M., Lord, B., & O’Riordan, L.
-                                (2008). In Need of Support: Recognizing The Care Roles And
-                                Contribution Of Extended Family Members In Families Caring For
-                                Children With Life Limiting Conditions. Australian and New
-                                Zealand Journal of Psychiatry, 42 (Suppl. 1): A106.
-              </p>
-                            <p>
-                                McLean, L., & Proctor, M-T. (2008). Attachment To God In
-                                Sickness And In Health: Theoretical Considerations And Clinical
-                                Applications Of Understanding This Important Relationship In The
-                                Lives Of Our Patients/Clients As An Attachment Relationship,
-                                Australian and New Zealand Journal of Psychiatry, 42 (Suppl. 1)
-                                A32-A34.
-              </p>
-                        </Table.Cell>
-                    </Table.Row>
-                </Table.Body>
-            </Table>
-        );
-    };
 
     const invitedLecturesAndPresentations = () => {
         return (

@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Header, Container, Grid, Segment, Message } from 'semantic-ui-react'
+import { Header, Container, Grid, Message } from 'semantic-ui-react'
 
 import { css } from 'styled-components'
 

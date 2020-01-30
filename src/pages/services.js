@@ -1,11 +1,8 @@
-import React, { useState, useRef } from 'react'
+import React from 'react'
 import { Jumbotron } from '../components/MyStyledComponents'
-import { Container, Image, Divider, Tab, Responsive } from 'semantic-ui-react'
+import { Container, Divider } from 'semantic-ui-react'
 import { useStaticQuery, graphql } from 'gatsby'
 
-// images
-import hands from '../images/resources/Image_19_Hands.jpg'
-import plant from '../images/resources/plant.jpg'
 import sunsetWithRocks from '../images/resources/image_6_Sunset_with_rocks.jpg'
 import Layout from '../components/layout'
 import ResponsiveTabs from '../components/ResponsiveTabs'

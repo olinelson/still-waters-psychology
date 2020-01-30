@@ -7,10 +7,8 @@ import {
   JumboHeader,
   CenteredGridColumn,
   ImageDiv,
-  CreditContainer,
   Quote,
 } from '../components/MyStyledComponents'
-import Events from '../components/Events'
 import { Link } from 'gatsby'
 import {
   Button,
@@ -22,7 +20,6 @@ import {
   List,
   Header,
   Icon,
-  Message,
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
