@@ -4,6 +4,8 @@ import {
   JumboMessage,
   Jumbotron,
   Quote,
+  GatsbyJumbotron,
+  GatsbyJumbotronInnerContainer,
 } from '../components/MyStyledComponents'
 
 import { Container, Divider, Segment, Image } from 'semantic-ui-react'
@@ -15,10 +17,42 @@ import blueSunset from '../images/resources/image_4_Blue_Sunset.jpg'
 
 import motherChild from '../images/resources/image_3_Mother_Child.jpg'
 
+import Img from 'gatsby-image'
+import { graphql, useStaticQuery } from 'gatsby'
+
 export default function About() {
+  const images = useStaticQuery(graphql`
+    query {
+      wharf: file(relativePath: { regex: "/(images/resources/wharf)/" }) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      blueSunset: file(
+        relativePath: { regex: "/(images/resources/image_4_Blue_Sunset)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(images)
+
   return (
     <Layout>
-      <Jumbotron src={wharf}></Jumbotron>
+      <GatsbyJumbotron>
+        <Img
+          style={{ gridArea: 'main' }}
+          fluid={images.wharf.childImageSharp.fluid}
+        />
+      </GatsbyJumbotron>
+      {/* <Jumbotron src={wharf}></Jumbotron> */}
       <Container>
         <Segment basic size="large">
           <h1>Still Waters</h1>
@@ -109,8 +143,8 @@ export default function About() {
         <Divider hidden />
       </Container>
 
-      <Jumbotron fullHeight src={blueSunset}>
-        <JumboMessage style={{}}>
+      <GatsbyJumbotron fullHeight>
+        <GatsbyJumbotronInnerContainer>
           <blockquote style={{ color: 'white' }}>
             <p
               style={{
@@ -127,8 +161,12 @@ export default function About() {
               &mdash; Psalm 23: 1: 3 ,Holy Bible, ESV®, 2001
             </figcaption>
           </blockquote>
-        </JumboMessage>
-      </Jumbotron>
+        </GatsbyJumbotronInnerContainer>
+        <Img
+          style={{ gridArea: 'main' }}
+          fluid={images.blueSunset.childImageSharp.fluid}
+        />
+      </GatsbyJumbotron>
     </Layout>
   )
 }

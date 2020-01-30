@@ -22,7 +22,7 @@ function Nav({ siteTitle }) {
         position: 'sticky',
         top: '0rem',
         background: 'white',
-        zIndex: 1,
+        zIndex: 2,
         // maxWidth: '100vw',
       }}
     >
@@ -41,7 +41,7 @@ function Nav({ siteTitle }) {
   )
 
   const mobileMenu = () => (
-    <MobileOnlyDiv>
+    <MobileOnlyDiv style={{ zIndex: 2 }}>
       <Menu>
         <Sidebar
           as={Menu}

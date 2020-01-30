@@ -2,19 +2,17 @@ import React from 'react'
 
 // components
 import {
-  Jumbotron,
-  JumboMessage,
-  JumboHeader,
+  GatsbyJumbotron,
+  GatsbyJumbotronInnerContainer,
   CenteredGridColumn,
-  ImageDiv,
   Quote,
 } from '../components/MyStyledComponents'
-import { Link } from 'gatsby'
+import { Link, graphql, useStaticQuery } from 'gatsby'
+import Img from 'gatsby-image'
 import {
   Button,
   Container,
   Divider,
-  Image,
   Grid,
   Segment,
   List,
@@ -24,47 +22,102 @@ import {
 import Layout from '../components/layout'
 
 // images
-import stillWaters from '../images/resources/image_1_Still_Waters_High_Resolution.jpg'
-import whiteMainLogo from '../images/logos/white_logo.png'
-import peacefulHeart from '../images/resources/peaceful_heart.jpg'
-import stillMind from '../images/resources/still_mind.jpg'
-import calmSpirit from '../images/resources/Image_22_Woman_on_rock.jpg'
-import restoredSoul from '../images/resources/Image_23_Man_on_rock.jpg'
 import sunset from '../images/resources/image_2_Sunset.jpg'
 import FAQS from '../components/Faqs'
+import styled from 'styled-components'
 
 const IndexPage = ({ location }) => {
-  // const data = useStaticQuery(graphql`
-  //   query {
-  //     allFile(filter: { absolutePath: { regex: "/(carousel)/" } }) {
-  //       edges {
-  //         node {
-  //           name
-  //           extension
-  //           dir
-  //           modifiedTime
-  //           publicURL
-  //         }
-  //       }
-  //     }
-  //     site {
-  //       siteMetadata {
-  //         siteURL
-  //       }
-  //     }
-  //   }
-  // `)
+  const data = useStaticQuery(graphql`
+    query {
+      stillWaters: file(
+        relativePath: {
+          regex: "/(images/resources/image_1_Still_Waters_High_Resolution)/"
+        }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      sunset: file(
+        relativePath: { regex: "/(images/resources/image_2_Sunset)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      logo: file(relativePath: { regex: "/(images/logos/white_logo)/" }) {
+        childImageSharp {
+          fixed(width: 300, height: 300) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      aStillMind: file(
+        relativePath: { regex: "/(images/resources/still_mind)/" }
+      ) {
+        childImageSharp {
+          fixed(width: 280, height: 280) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      peacefulHeart: file(
+        relativePath: { regex: "/(images/resources/peaceful_heart)/" }
+      ) {
+        childImageSharp {
+          fixed(width: 280, height: 280) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      calmSpirit: file(
+        relativePath: { regex: "/(images/resources/calm_spirit)/" }
+      ) {
+        childImageSharp {
+          fixed(width: 280, height: 280) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+      restoredSoul: file(
+        relativePath: { regex: "/(images/resources/restored_soul)/" }
+      ) {
+        childImageSharp {
+          fixed(width: 280, height: 280) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
+    }
+  `)
+
+  console.log(data)
 
   return (
     <>
       <Layout location={location}>
-        <Jumbotron location={location} fullHeight src={stillWaters}>
+        <GatsbyJumbotron>
+          <GatsbyJumbotronInnerContainer>
+            <Img fixed={data.logo.childImageSharp.fixed} />
+          </GatsbyJumbotronInnerContainer>
+
+          <Img
+            style={{ gridArea: 'main' }}
+            fluid={data.stillWaters.childImageSharp.fluid}
+          />
+        </GatsbyJumbotron>
+
+        {/* <Jumbotron location={location} fullHeight src={stillWaters}>
           <JumboMessage>
             <JumboHeader size="huge" as={'h1'} inverted>
-              <Image src={whiteMainLogo} alt="still waters logo" size="large" />
+             
             </JumboHeader>
           </JumboMessage>
-        </Jumbotron>
+        </Jumbotron> */}
         <Divider hidden />
 
         <Container>
@@ -143,33 +196,28 @@ const IndexPage = ({ location }) => {
           <Grid columns={2} padded relaxed stackable>
             <Grid.Row>
               <CenteredGridColumn>
-                <ImageDiv width="20rem" height="20rem" src={stillMind} />
+                <Img fixed={data.aStillMind.childImageSharp.fixed} />
 
                 <h2>A still mind</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <ImageDiv width="20rem" height="20rem" src={peacefulHeart} />
+                <Img fixed={data.peacefulHeart.childImageSharp.fixed} />
 
                 <h2>A peaceful heart</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <ImageDiv width="20rem" height="20rem" src={calmSpirit} />
+                <Img fixed={data.calmSpirit.childImageSharp.fixed} />
 
                 <h2>A calm spirit</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <ImageDiv
-                  width="20rem"
-                  height="20rem"
-                  alt="Man on rock by Marius Venter from Pexels"
-                  src={restoredSoul}
-                />
+                <Img fixed={data.restoredSoul.childImageSharp.fixed} />
 
                 <h2>A restored soul</h2>
                 <Divider hidden />
@@ -237,8 +285,8 @@ const IndexPage = ({ location }) => {
 
         <Divider hidden />
 
-        <Jumbotron fullHeight src={sunset}>
-          <JumboMessage style={{ width: '90vw' }}>
+        <GatsbyJumbotron fullHeight>
+          <GatsbyJumbotronInnerContainer>
             <Segment basic>
               <Grid columns={2} stackable>
                 <Grid.Row>
@@ -284,10 +332,13 @@ const IndexPage = ({ location }) => {
                 </Grid.Row>
               </Grid>
             </Segment>
-          </JumboMessage>
+          </GatsbyJumbotronInnerContainer>
 
-          {/* <CreditContainer></CreditContainer> */}
-        </Jumbotron>
+          <Img
+            style={{ gridArea: 'main' }}
+            fluid={data.sunset.childImageSharp.fluid}
+          />
+        </GatsbyJumbotron>
 
         <Divider hidden />
         <FAQS />

@@ -122,3 +122,19 @@ export const Quote = styled(Message)`
   box-shadow: ${props =>
     `0px 0px 0px 1px ${props.textColor}, 0px 0px 0px 0px rgba(0, 0, 0, 0)!important`};
 `
+export const GatsbyJumbotron = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'main';
+  height: ${props => (props.fullHeight ? '80vh' : '50vh')};
+  min-height: 350px;
+`
+
+export const GatsbyJumbotronInnerContainer = styled.div`
+  grid-area: main;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+`

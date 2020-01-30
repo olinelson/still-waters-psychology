@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron } from "../components/MyStyledComponents";
+import { Jumbotron, GatsbyJumbotron } from "../components/MyStyledComponents";
 import {
     Divider,
     Table,
@@ -12,17 +12,29 @@ import {graphql, useStaticQuery} from 'gatsby'
 import Layout from '../components/layout'
 import ResponsiveTabs from "../components/ResponsiveTabs";
 
+import Img from 'gatsby-image'
+
+
 export default function Research() {
 
     const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          siteURL
+      query {
+        site {
+          siteMetadata {
+            siteURL
+          }
+        }
+        purpleFlower: file(
+          relativePath: { regex: "/(images/resources/image_7_Purple_flower)/" }
+        ) {
+          childImageSharp {
+            fluid(fit: CONTAIN) {
+              ...GatsbyImageSharpFluid
+            }
+          }
         }
       }
-    }
-  `)
+    `)
 
     const siteURL = data.site.siteMetadata.siteURL
    
@@ -948,34 +960,35 @@ export default function Research() {
     ];
 
     return (
-        <Layout>
-            <Jumbotron
+      <Layout>
+        <GatsbyJumbotron>
+          <Img fluid={data.purpleFlower.childImageSharp.fluid} />
+        </GatsbyJumbotron>
 
-                src={siteURL + '/images/image_7_Purple_flower.jpg'}
-            ></Jumbotron>
-            <Divider hidden />
+        <Divider hidden />
 
-                <Header as={'h1'} textAlign="center">Research</Header>
-                <Segment basic size="large">
-                <p>
-                    Engaging in research is an important aspect of academic life. Below
-                    are listed publications and presentations arising from this work (both
-                    sole research and research in collaboration with others), some of
-                    which has focused on spirituality and psychological health; the
-                    experiences of those with disability and serious illness and their
-                    carers’ needs; sense-making in the context of trauma and loss; and
-                    health practitioner professional formation. I continue to research via
-                    a range of research collaborations, including as Senior Research
-                    Fellow with the Lumen Research Institute (2017-2020).
-        </p>
+        <Header as={'h1'} textAlign="center">
+          Research
+        </Header>
+        <Segment basic size="large">
+          <p>
+            Engaging in research is an important aspect of academic life. Below
+            are listed publications and presentations arising from this work
+            (both sole research and research in collaboration with others), some
+            of which has focused on spirituality and psychological health; the
+            experiences of those with disability and serious illness and their
+            carers’ needs; sense-making in the context of trauma and loss; and
+            health practitioner professional formation. I continue to research
+            via a range of research collaborations, including as Senior Research
+            Fellow with the Lumen Research Institute (2017-2020).
+          </p>
+        </Segment>
 
-                
-            </Segment>
-                
-
-
-            <ResponsiveTabs mobileBreakPoint="760px" desktopBreakPoint="761px" panes={panes} />
-            
-        </Layout>
-    );
+        <ResponsiveTabs
+          mobileBreakPoint="760px"
+          desktopBreakPoint="761px"
+          panes={panes}
+        />
+      </Layout>
+    )
 }

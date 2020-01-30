@@ -1,8 +1,9 @@
 import React, { useRef } from 'react'
-import { Jumbotron } from '../components/MyStyledComponents'
+import { Jumbotron, GatsbyJumbotron } from '../components/MyStyledComponents'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Container, Divider } from 'semantic-ui-react'
 import Layout from '../components/layout'
+import Img from 'gatsby-image'
 
 // images
 import waterDrops from '../images/resources/image_11_Water_drops_1.jpg'
@@ -19,6 +20,15 @@ export default function Staff() {
           html
           frontmatter {
             title
+          }
+        }
+      }
+      waterDrops: file(
+        relativePath: { regex: "/(images/resources/image_11_Water_drops_1)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -114,7 +124,10 @@ export default function Staff() {
 
   return (
     <Layout>
-      <Jumbotron src={waterDrops}></Jumbotron>
+      <GatsbyJumbotron>
+        <Img fluid={data.waterDrops.childImageSharp.fluid} />
+      </GatsbyJumbotron>
+
       <Divider hidden />
       <div ref={topOfTabRef} />
       <Container>
