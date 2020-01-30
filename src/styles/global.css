@@ -7,9 +7,12 @@
   }
 }
 
-div.ui.compact.fluid.stackable.menu {
-  overflow-x: scroll !important;
+@media (max-width: 62.5em) {
+  div.ui.compact.fluid.stackable.menu {
+    overflow-x: scroll !important;
+  }
 }
+
 /* 
 blockquote {
   position: relative;
