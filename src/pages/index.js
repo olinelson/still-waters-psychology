@@ -21,10 +21,7 @@ import {
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
-// images
-import sunset from '../images/resources/image_2_Sunset.jpg'
 import FAQS from '../components/Faqs'
-import styled from 'styled-components'
 
 const IndexPage = ({ location }) => {
   const data = useStaticQuery(graphql`
@@ -102,10 +99,34 @@ const IndexPage = ({ location }) => {
       <Layout location={location}>
         <GatsbyJumbotron>
           <GatsbyJumbotronInnerContainer>
-            <Img fixed={data.logo.childImageSharp.fixed} />
+            <Img
+              alt="still waters logo"
+              fixed={data.logo.childImageSharp.fixed}
+            />
+          </GatsbyJumbotronInnerContainer>
+
+          <GatsbyJumbotronInnerContainer
+            style={{
+              display: 'grid',
+              justifyContent: 'end',
+              alignItems: 'end',
+              padding: '1rem',
+              color: 'white',
+            }}
+          >
+            <small>
+              ‘Still Waters’ –{' '}
+              <a
+                style={{ color: 'inherit' }}
+                href="https://www.maine1photography.com"
+              >
+                Catharine McCann
+              </a>
+            </small>
           </GatsbyJumbotronInnerContainer>
 
           <Img
+            alt="still waters painting"
             style={{ gridArea: 'main' }}
             fluid={data.stillWaters.childImageSharp.fluid}
           />
@@ -196,28 +217,40 @@ const IndexPage = ({ location }) => {
           <Grid columns={2} padded relaxed stackable>
             <Grid.Row>
               <CenteredGridColumn>
-                <Img fixed={data.aStillMind.childImageSharp.fixed} />
+                <Img
+                  alt="park bench in park"
+                  fixed={data.aStillMind.childImageSharp.fixed}
+                />
 
                 <h2>A still mind</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <Img fixed={data.peacefulHeart.childImageSharp.fixed} />
+                <Img
+                  alt="woman on rocks by the sea"
+                  fixed={data.peacefulHeart.childImageSharp.fixed}
+                />
 
                 <h2>A peaceful heart</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <Img fixed={data.calmSpirit.childImageSharp.fixed} />
+                <Img
+                  alt="lake at the base of two mountains"
+                  fixed={data.calmSpirit.childImageSharp.fixed}
+                />
 
                 <h2>A calm spirit</h2>
                 <Divider hidden />
               </CenteredGridColumn>
 
               <CenteredGridColumn>
-                <Img fixed={data.restoredSoul.childImageSharp.fixed} />
+                <Img
+                  alt="man in a cave on top of a mountain"
+                  fixed={data.restoredSoul.childImageSharp.fixed}
+                />
 
                 <h2>A restored soul</h2>
                 <Divider hidden />

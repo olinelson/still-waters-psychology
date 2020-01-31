@@ -1,21 +1,13 @@
 import React from 'react'
 
 import {
-  JumboMessage,
-  Jumbotron,
   Quote,
   GatsbyJumbotron,
   GatsbyJumbotronInnerContainer,
 } from '../components/MyStyledComponents'
 
-import { Container, Divider, Segment, Image } from 'semantic-ui-react'
+import { Container, Divider, Segment } from 'semantic-ui-react'
 import Layout from '../components/layout'
-// images
-import wharf from '../images/resources/wharf.jpg'
-import boat from '../images/resources/boat.png'
-import blueSunset from '../images/resources/image_4_Blue_Sunset.jpg'
-
-import motherChild from '../images/resources/image_3_Mother_Child.jpg'
 
 import Img from 'gatsby-image'
 import { graphql, useStaticQuery } from 'gatsby'
@@ -39,6 +31,22 @@ export default function About() {
           }
         }
       }
+      motherChild: file(
+        relativePath: { regex: "/(images/resources/image_3_Mother_Child)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      boat: file(relativePath: { regex: "/(images/resources/boat)/" }) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -48,6 +56,7 @@ export default function About() {
     <Layout>
       <GatsbyJumbotron>
         <Img
+          alt="wharf"
           style={{ gridArea: 'main' }}
           fluid={images.wharf.childImageSharp.fluid}
         />
@@ -71,14 +80,11 @@ export default function About() {
           </p>
         </Segment>
 
-        <Segment basic>
-          <Image
-            alt="mother standing with child on beach"
-            centered
-            size="big"
-            src={motherChild}
-          />
-        </Segment>
+        <Img
+          alt="mother holding child on beach"
+          style={{ maxWidth: '42rem', margin: 'auto' }}
+          fluid={images.motherChild.childImageSharp.fluid}
+        />
 
         <Segment
           basic
@@ -120,9 +126,15 @@ export default function About() {
           }
         />
 
-        <Segment basic>
+        {/* <Segment basic>
           <Image alt="boat on still waters" centered size="big" src={boat} />
-        </Segment>
+        </Segment> */}
+
+        <Img
+          alt="boat on the water"
+          style={{ maxWidth: '42rem', margin: 'auto' }}
+          fluid={images.boat.childImageSharp.fluid}
+        />
 
         <Segment
           basic
@@ -163,6 +175,7 @@ export default function About() {
           </blockquote>
         </GatsbyJumbotronInnerContainer>
         <Img
+          alt="blue sunset"
           style={{ gridArea: 'main' }}
           fluid={images.blueSunset.childImageSharp.fluid}
         />

@@ -1,5 +1,5 @@
 import React from "react";
-import { Jumbotron, GatsbyJumbotron } from "../components/MyStyledComponents";
+import { GatsbyJumbotron } from "../components/MyStyledComponents";
 import {
     Divider,
     Table,
@@ -36,7 +36,6 @@ export default function Research() {
       }
     `)
 
-    const siteURL = data.site.siteMetadata.siteURL
    
 
     const articles = () => {
@@ -962,7 +961,7 @@ export default function Research() {
     return (
       <Layout>
         <GatsbyJumbotron>
-          <Img fluid={data.purpleFlower.childImageSharp.fluid} />
+          <Img alt='purple flower' fluid={data.purpleFlower.childImageSharp.fluid} />
         </GatsbyJumbotron>
 
         <Divider hidden />

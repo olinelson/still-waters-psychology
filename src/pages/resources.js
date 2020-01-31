@@ -1,9 +1,7 @@
 import React from 'react'
 import { Container, Card, Divider, List, Segment } from 'semantic-ui-react'
-import { Jumbotron } from '../components/MyStyledComponents'
+import { GatsbyJumbotron } from '../components/MyStyledComponents'
 import Layout from '../components/layout'
-
-import blueWater from '../images/resources/image_18_Blue_water.jpg'
 
 // logos
 import blackdog from '../images/logos/black_dog.jpg'
@@ -20,12 +18,38 @@ import headToHealth from '../images/logos/head_to_health.png'
 import openMinds from '../images/logos/open_minds.png'
 import acon from '../images/logos/acon.png'
 import copmi from '../images/logos/copmi.png'
-import therapy from '../images/resources/image_9_Therapy_1.jpg'
 
+import Img from 'gatsby-image'
+import { graphql, useStaticQuery } from 'gatsby'
 export default function Resources() {
+  const data = useStaticQuery(graphql`
+    query {
+      blueWater: file(
+        relativePath: { regex: "/(images/resources/image_18_Blue_water)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      therapy: file(
+        relativePath: { regex: "/(images/resources/image_9_Therapy_1)/" }
+      ) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
-      <Jumbotron src={blueWater} />
+      <GatsbyJumbotron>
+        <Img alt="blue water" fluid={data.blueWater.childImageSharp.fluid} />
+      </GatsbyJumbotron>
 
       <Container text>
         <Divider hidden />
@@ -150,7 +174,13 @@ export default function Resources() {
 
       <Divider hidden />
 
-      <Jumbotron src={therapy} />
+      {/* <Jumbotron src={therapy} /> */}
+      <GatsbyJumbotron>
+        <Img
+          alt="people in therapy"
+          fluid={data.therapy.childImageSharp.fluid}
+        />
+      </GatsbyJumbotron>
 
       <Divider hidden />
 

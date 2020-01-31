@@ -27,26 +27,26 @@ export const JumboHeader = styled(Header)`
   z-index: 3 !important;
 `
 
-export const Jumbotron = styled.div`
-  background-position: ${props =>
-    props.right ? 'right 15vw top 0% !important' : 'center !important'};
-  background-size: ${props =>
-    props.contain ? 'contain !important' : 'cover !important'};
-  background-repeat: no-repeat !important;
-  background: ${props => `url('${props.src}')`};
-  height: ${props => (props.fullHeight ? '85vh !important' : '50vh')};
-  display: grid;
-  @media only screen and (max-width: 1024px) {
-    margin-top: -1rem;
-  }
-}
-`
-export const JumboMessage = styled.div`
-  background-color: rgba(0, 0, 0, 0) !important;
-  margin: auto;
-  justify-self: ;
-  padding: 2rem;
-`
+// export const Jumbotron = styled.div`
+//   background-position: ${props =>
+//     props.right ? 'right 15vw top 0% !important' : 'center !important'};
+//   background-size: ${props =>
+//     props.contain ? 'contain !important' : 'cover !important'};
+//   background-repeat: no-repeat !important;
+//   background: ${props => `url('${props.src}')`};
+//   height: ${props => (props.fullHeight ? '85vh !important' : '50vh')};
+//   display: grid;
+//   @media only screen and (max-width: 1024px) {
+//     margin-top: -1rem;
+//   }
+// }
+// `
+// export const JumboMessage = styled.div`
+//   background-color: rgba(0, 0, 0, 0) !important;
+//   margin: auto;
+//   justify-self: ;
+//   padding: 2rem;
+// `
 
 export const SiteContainer = styled.div`
   display: grid;

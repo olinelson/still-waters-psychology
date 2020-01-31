@@ -1,9 +1,8 @@
 import React from 'react'
-import { Jumbotron, GatsbyJumbotron } from '../components/MyStyledComponents'
+import { GatsbyJumbotron } from '../components/MyStyledComponents'
 import { Container, Divider } from 'semantic-ui-react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import sunsetWithRocks from '../images/resources/image_6_Sunset_with_rocks.jpg'
 import Layout from '../components/layout'
 import ResponsiveTabs from '../components/ResponsiveTabs'
 
@@ -50,7 +49,7 @@ export default function Services() {
   return (
     <Layout>
       <GatsbyJumbotron>
-        <Img fluid={data.sunsetWithRocks.childImageSharp.fluid} />
+        <Img alt="sunset" fluid={data.sunsetWithRocks.childImageSharp.fluid} />
       </GatsbyJumbotron>
       <Divider hidden />
       <Container>

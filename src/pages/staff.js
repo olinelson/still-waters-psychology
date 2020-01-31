@@ -1,12 +1,10 @@
 import React, { useRef } from 'react'
-import { Jumbotron, GatsbyJumbotron } from '../components/MyStyledComponents'
+import { GatsbyJumbotron } from '../components/MyStyledComponents'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Container, Divider } from 'semantic-ui-react'
 import Layout from '../components/layout'
 import Img from 'gatsby-image'
 
-// images
-import waterDrops from '../images/resources/image_11_Water_drops_1.jpg'
 import ResponsiveTabs from '../components/ResponsiveTabs'
 
 export default function Staff() {
@@ -125,7 +123,7 @@ export default function Staff() {
   return (
     <Layout>
       <GatsbyJumbotron>
-        <Img fluid={data.waterDrops.childImageSharp.fluid} />
+        <Img alt="water drops" fluid={data.waterDrops.childImageSharp.fluid} />
       </GatsbyJumbotron>
 
       <Divider hidden />

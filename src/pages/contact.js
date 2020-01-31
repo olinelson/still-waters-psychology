@@ -2,8 +2,8 @@ import React from 'react'
 
 import ContactForm from '../components/ContactForm'
 
-import { Jumbotron } from '../components/MyStyledComponents'
-import pathImg from '../images/resources/contact.jpg'
+import { GatsbyJumbotron } from '../components/MyStyledComponents'
+
 import {
   Embed,
   Container,
@@ -13,6 +13,8 @@ import {
   Accordion,
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
+
+import Img from 'gatsby-image'
 
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -52,6 +54,13 @@ export default function Contact() {
           }
         }
       }
+      trees: file(relativePath: { regex: "/(images/resources/contact)/" }) {
+        childImageSharp {
+          fluid(fit: CONTAIN) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
     }
   `)
 
@@ -82,7 +91,10 @@ export default function Contact() {
 
   return (
     <Layout>
-      <Jumbotron imgDir="images/image_16/" src={pathImg} />
+      {/* <Jumbotron imgDir="images/image_16/" src={pathImg} /> */}
+      <GatsbyJumbotron>
+        <Img alt="path of trees" fluid={data.trees.childImageSharp.fluid} />
+      </GatsbyJumbotron>
       <Divider hidden />
       <Container text>
         {startingTheJourney}
