@@ -264,10 +264,10 @@ const IndexPage = ({ location }) => {
             <Icon size="large" name="quote left" />
             <blockquote style={{ color: 'inherit' }}>
               <p>
-                “I am committed to creating a safe and supportive space in
-                which, together, client and therapist, can address the client’s
-                needs and concerns. I value relationships and collaboration,
-                these central to the way I engage with my clients”.
+                I am committed to creating a safe and supportive space in which,
+                together, client and therapist, can address the client’s needs
+                and concerns. I value relationships and collaboration, these
+                central to the way I engage with my clients.
               </p>
 
               <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
