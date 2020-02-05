@@ -1,14 +1,14 @@
 ---
 title: 'Qualifications'
-order: 2,
+order: 2
 ---
 
 # Qualifications
 
 My clinical work is informed by ongoing professional development and my original academic training. Each year the Psychology Board of Australia requires all psychologists to complete mandatory professional development to ensure clients are provided with relevant, evidence-based, contemporary psychological care. In training to become a psychologist I completed four higher education degrees.
 
-- A Bachelor degree with a double major in Psychology and Religious Studies from the University of Sydney - BA (Psych/Rel.Studies);
-- A Bachelor degree with a First Class Honours in Psychology and a University Medal from the University of Western Sydney – BA (HonsPsych – Class 1/University Medal);{' '}
+- A Bachelor degree with a double major in Psychology and Religious Studies from the University of Sydney - BA (Psych/Rel.Studies)
+- A Bachelor degree with a First Class Honours in Psychology and a University Medal from the University of Western Sydney – BA (HonsPsych – Class 1/University Medal)
 - A Masters degree in Psychotherapy from the University of Sydney - MScMed (Psychotherapy).
 - A Doctorate in the discipline of Psychology from the University of Western Sydney - PhD
 

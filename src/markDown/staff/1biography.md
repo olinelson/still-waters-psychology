@@ -1,13 +1,13 @@
 ---
 title: 'Biography'
-order: 1,
+order: 1
 ---
 
 #Biography
 
 My name is Dr Marie-Thérèse Proctor. For more than 20 years, whether as a clinician, educator, academic, or researcher I have been passionate about supporting, equipping and encouraging individuals to learn, heal, grow and flourish, personally and professionally.
 
-I am an PhD trained, AHPRA registered psychologist with Medicare provider rights, and Master trained psychotherapist, providing short-term and long-term psychological and psychotherapeutic care for adults of varied ages. As an mental health educator, I can provide (i) educational training and professional development workshop for churches, communities groups and allied healthcare professionals; and (ii) supervision and mentoring of chaplains and allied healthcare professionals, with an emphasis on reflective practice, professional formation, growth and maturation.
+I am an PhD trained, AHPRA registered psychologist with Medicare provider rights, and Master’s trained psychotherapist, providing short-term and long-term psychological and psychotherapeutic care for adults of varied ages. As an mental health educator, I can provide (i) educational training and professional development workshop for churches, communities groups and allied healthcare professionals; and (ii) supervision and mentoring of chaplains and allied healthcare professionals, with an emphasis on reflective practice, professional formation, growth and maturation.
 
 <!-- Insert bio image here – please don’t make it too large. -->
 

@@ -30,7 +30,7 @@ export default function FAQS() {
       key: '3',
       title: 'Payment Options',
       content: [
-        'Clients can pay via Direct Bank transfer, credit card, EFTPOS and HICAPS. NDIS (self-managed) clients will need to seek a refund from the NDIA.',
+        'Clients can pay via Direct Bank transfer, seeking a reimbursement for Medicare (if attending under a treatment plan) or the NDIA (if applicable). Invoices and receipts are provided electronically.',
       ].join(' '),
     },
     {

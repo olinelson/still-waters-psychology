@@ -50,7 +50,6 @@ export default function About() {
     }
   `)
 
-  console.log(images)
 
   return (
     <Layout>

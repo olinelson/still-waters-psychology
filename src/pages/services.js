@@ -17,6 +17,7 @@ export default function Services() {
           html
           frontmatter {
             title
+            order
           }
         }
       }
@@ -33,7 +34,6 @@ export default function Services() {
       }
     }
   `)
-  console.log(data)
 
   const panes = data.allMarkdownRemark.nodes
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order)

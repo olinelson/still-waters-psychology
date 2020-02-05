@@ -17,7 +17,6 @@ import {
   Segment,
   List,
   Header,
-  Icon,
 } from 'semantic-ui-react'
 import Layout from '../components/layout'
 
@@ -92,8 +91,6 @@ const IndexPage = ({ location }) => {
     }
   `)
 
-  console.log(data)
-
   return (
     <>
       <Layout location={location}>
@@ -154,14 +151,13 @@ const IndexPage = ({ location }) => {
               </p>
             }
           />
-          {/* <Quote backgroundColor="#8AC9D8" fontColor="white" inverted> */}
 
-          <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
-            <Icon size="large" name="quote left" />
+          <Quote backgroundColor="white" textColor="#016F92">
+            {/* <Icon size="large" name="quote left" /> */}
             <blockquote style={{ color: 'inherit' }}>
               <p>
-                My vision is to support, equip and encourage individuals and
-                communities to heal, grow and flourish
+                "My vision is to support, equip and encourage individuals and
+                communities to heal, grow and flourish"
               </p>
 
               <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
@@ -182,17 +178,17 @@ const IndexPage = ({ location }) => {
             }
           />
 
-          <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
-            <Icon size="large" name="quote left" />
+          <Quote backgroundColor="white" textColor="#016F92">
+            {/* <Icon size="large" name="quote left" /> */}
             <blockquote style={{ color: 'inherit' }}>
               <p>
-                When healing, growth and flourishing occurs, individuals have
+                " When healing, growth and flourishing occurs, individuals have
                 scope to realise their personal and professional potential,
                 while communities become supportive, nurturing and caring
                 spaces, able to respond in healthy and positive ways to the
                 needs of its members. Positive change in the individual can
                 filter through, helping to form healthier communities. In turn,
-                healthy communities become the foundation of healthy nations
+                healthy communities become the foundation of healthy nations."
               </p>
 
               <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
@@ -260,14 +256,14 @@ const IndexPage = ({ location }) => {
         </Segment>
 
         <Container>
-          <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
-            <Icon size="large" name="quote left" />
+          <Quote backgroundColor="white" textColor="#016F92">
+            {/* <Icon size="large" name="quote left" /> */}
             <blockquote style={{ color: 'inherit' }}>
               <p>
-                I am committed to creating a safe and supportive space in which,
-                together, client and therapist, can address the client’s needs
-                and concerns. I value relationships and collaboration, these
-                central to the way I engage with my clients.
+                "I am committed to creating a safe and supportive space in
+                which, together, client and therapist, can address the client’s
+                needs and concerns. I value relationships and collaboration,
+                these central to the way I engage with my clients."
               </p>
 
               <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
