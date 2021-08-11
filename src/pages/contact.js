@@ -108,11 +108,10 @@ export default function Contact() {
         {location}
 
         <Divider hidden />
-
         <Embed
           active
           icon="map"
-          url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.119962861653!2d150.74602931573722!3d-34.0407937354384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12f1c12e78fbe5%3A0x9f87da28f965f7d4!2sShop%204%2F38%20Exchange%20Parade%2C%20Smeaton%20Grange%20NSW%202567!5e0!3m2!1sen!2sau!4v1576062669966!5m2!1sen!2sau"
+          url="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13222.692950115681!2d150.68601809912636!3d-34.0522521912128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12f0dcd0ff6409%3A0x37e0130f6fce03e9!2s20-24%20John%20St%2C%20Camden%20NSW%202570!5e0!3m2!1sen!2sau!4v1628666883461!5m2!1sen!2sau"
         />
 
         <Divider hidden />
@@ -120,7 +119,7 @@ export default function Contact() {
         <Container textAlign="center">
           <Button
             target="_blank"
-            href="https://www.google.com/maps?ll=-34.040798,150.748218&z=16&t=m&hl=en&gl=AU&mapclient=embed&daddr=Shop+4/38+Exchange+Parade+Smeaton+Grange+NSW+2567@-34.0407982,150.748218"
+            href="https://www.google.com/maps/dir//20-24%20John%20St,%20Camden%20NSW%202570"
           >
             Get Directions
           </Button>

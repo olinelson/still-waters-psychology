@@ -53,9 +53,9 @@ Psychologists and psychotherapists are trained in a range of therapy models and 
 
 ##Types of Clients
 
-You can attend as a private client (no referral required), paying a fee per session. You may be eligible for a rebate from your private health insurance fund (e.g. BUPA, Medibank etc). Please bring your health fund card to each session.
+You can attend as a private client (no referral required), paying a fee per session. You may be eligible for a rebate from your private health insurance fund (e.g., BUPA, Medibank etc). Please bring your health fund card to each session.
 
-You can attend as a Medicare client, under a Treatment Plan provided by your GP. Where you have a treatment plan, you can be entitled to a Medicare rebate for up to 10 sessions (within a calendar year). Please bring your Medicare card to each session. When seeking a treatment plan, you will need to provide your GP with the practice details as this needs to be included on the treatment plan referral. A treatment plan is tailored to each client’s unique situation and may include a request for psychoeducation and cognitive-informed therapy. You will need to bring your treatment plan to your first session.
+You can attend as a Medicare client, under a Referral and Mental Health Plan provided by your GP. You need to obtain your GP referral prior to your initial session. Where you have a mental health plan, normally you are entitled to a Medicare rebate for up to 10 sessions (within a calendar year). During the COVID pandemic this has been extended to 20 sessions per calendar year until 30/6/2022. During this period the government has also made Telehealth available, at present permitted until 31/12/2021 though this may change and if so, clients will be advised. Telehealth sessions are entitled to a Medicare rebate. When seeking a mental health plan, you will need to provide your GP with the practice details as this needs to be included on the mental health plan referral. A mental health plan is tailored to each client’s unique situation. You will need to bring your referral and mental health plan to your first session.
 
 You can attend as a NDIS self-managed client. Self-managed NDIS clients pay their counselling fee upfront, obtaining an NDIS refund after each session.
 

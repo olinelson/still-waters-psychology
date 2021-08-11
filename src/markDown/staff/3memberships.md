@@ -5,13 +5,7 @@ order: 3
 
 #Professional Memberships & Registrations
 
-Supporting the professional life of peers and students have been
-important to me. Across the years I have resided on numerous
-professional and external academic committees and internal academic
-committees within the institutions with whom I have worked. Currently
-I am a member of the Psychotherapy and Counselling Federation of
-Australian (PACFA) Education Accreditation Committee (EPAC), sitting
-on various of their course accreditation panels.
+Supporting the professional life of peers and students have been important to me. Across the years I have resided on numerous professional and external academic committees and internal academic committees within the institutions with whom I have worked. For example, I am a former member of the Psychotherapy and Counselling Federation of Australian (PACFA) Education Accreditation Committee (EPAC), sitting on various of their course accreditation panels.
 
 Current professional association memberships and provider rights
 include:
