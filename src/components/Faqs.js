@@ -11,8 +11,8 @@ export default function FAQS() {
         content: (
           <>
             <p>
-              We offer in-person sessions at Smeaton Grange (near Narellan NSW)
-              and phone and video sessions (all by appointment).{' '}
+              We offer in-person sessions at Camden NSW and phone and video
+              sessions (all by appointment).{' '}
               <Link to="/contact">Contact Page</Link>
             </p>
           </>
@@ -36,7 +36,9 @@ export default function FAQS() {
     {
       key: '4',
       title: 'Parking Options',
-      content: ['Parking is readily available'].join(' '),
+      content: [
+        'Parking is available in John Street (timed parking), Mitchell Street (untimed parking) or at nearby shopping malls.',
+      ].join(' '),
     },
     {
       key: '5',

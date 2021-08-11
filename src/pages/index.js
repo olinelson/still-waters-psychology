@@ -6,6 +6,7 @@ import {
   GatsbyJumbotronInnerContainer,
   CenteredGridColumn,
   Quote,
+  ImageParagraph,
 } from '../components/MyStyledComponents'
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
@@ -88,6 +89,15 @@ const IndexPage = ({ location }) => {
           }
         }
       }
+      covidSafe: file(
+        relativePath: { regex: "/(images/resources/covid-safe-logo)/" }
+      ) {
+        childImageSharp {
+          fixed(width: 280, height: 280) {
+            ...GatsbyImageSharpFixed
+          }
+        }
+      }
     }
   `)
 
@@ -129,16 +139,28 @@ const IndexPage = ({ location }) => {
           />
         </GatsbyJumbotron>
 
-        {/* <Jumbotron location={location} fullHeight src={stillWaters}>
-          <JumboMessage>
-            <JumboHeader size="huge" as={'h1'} inverted>
-             
-            </JumboHeader>
-          </JumboMessage>
-        </Jumbotron> */}
         <Divider hidden />
 
         <Container>
+          <Segment
+            size="big"
+            basic
+            content={
+              <ImageParagraph>
+                <p>
+                  We are a COVID Safe Business (registered with NSW Services)
+                  offering Telehealth services to ensure continued client care
+                  during lockdowns. We also offer in-person sessions when it is
+                  safe for clients to attend on site. Please contact us on 0466
+                  231 620 to discuss your needs, and/or arrange an appointment.
+                </p>
+                <Img
+                  alt="Covid safe logo"
+                  fixed={data.covidSafe.childImageSharp.fixed}
+                />
+              </ImageParagraph>
+            }
+          />
           <Segment
             size="big"
             basic
@@ -153,7 +175,6 @@ const IndexPage = ({ location }) => {
           />
 
           <Quote backgroundColor="white" textColor="#016F92">
-            {/* <Icon size="large" name="quote left" /> */}
             <blockquote style={{ color: 'inherit' }}>
               <p>
                 "My vision is to support, equip and encourage individuals and
@@ -163,7 +184,6 @@ const IndexPage = ({ location }) => {
               <figcaption>&mdash; Dr Marie-Thérèse Proctor</figcaption>
             </blockquote>
           </Quote>
-          {/* </Quote> */}
 
           <Segment
             size="big"
