@@ -50,7 +50,6 @@ export default function About() {
     }
   `)
 
-
   return (
     <Layout>
       <GatsbyJumbotron>
@@ -101,7 +100,6 @@ export default function About() {
 
         <Quote backgroundColor="white" textColor="rgb(68, 164, 206)">
           <blockquote>
-            {/* <Icon size='large' name='quote left' /> */}
             <p style={{ textAlign: 'center', fontSize: '2rem' }}>
               still waters is a metaphor for self-regulation
             </p>

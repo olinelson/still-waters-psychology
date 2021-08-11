@@ -174,7 +174,7 @@ const IndexPage = ({ location }) => {
             }
           />
 
-          <Quote backgroundColor="white" textColor="#016F92">
+          <Quote backgroundColor="#016F92" textColor="white">
             <blockquote style={{ color: 'inherit' }}>
               <p>
                 "My vision is to support, equip and encourage individuals and
@@ -198,8 +198,7 @@ const IndexPage = ({ location }) => {
             }
           />
 
-          <Quote backgroundColor="white" textColor="#016F92">
-            {/* <Icon size="large" name="quote left" /> */}
+          <Quote backgroundColor="#016F92" textColor="white">
             <blockquote style={{ color: 'inherit' }}>
               <p>
                 " When healing, growth and flourishing occurs, individuals have
@@ -276,8 +275,7 @@ const IndexPage = ({ location }) => {
         </Segment>
 
         <Container>
-          <Quote backgroundColor="white" textColor="#016F92">
-            {/* <Icon size="large" name="quote left" /> */}
+          <Quote backgroundColor="#016F92" textColor="white">
             <blockquote style={{ color: 'inherit' }}>
               <p>
                 "I am committed to creating a safe and supportive space in
