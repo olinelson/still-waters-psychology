@@ -142,25 +142,28 @@ const IndexPage = ({ location }) => {
         <Divider hidden />
 
         <Container>
-          <Segment
-            size="big"
-            basic
-            content={
+          <Container text>
+            <Segment attached="bottom" raised compact size="medium">
               <ImageParagraph>
                 <p>
                   We are a COVID Safe Business (registered with NSW Services)
-                  offering Telehealth services to ensure continued client care
-                  during lockdowns. We also offer in-person sessions when it is
-                  safe for clients to attend on site. Please contact us on 0466
-                  231 620 to discuss your needs, and/or arrange an appointment.
+                  offering Telehealth services to ensure access to and continued
+                  client care during lockdowns. We also offer in-person sessions
+                  when it is safe for clients to attend on site. Please contact
+                  us on 0466 231 620 to discuss your needs, and/or to arrange an
+                  appointment.
                 </p>
                 <Img
                   alt="Covid safe logo"
                   fixed={data.covidSafe.childImageSharp.fixed}
+                  style={{
+                    width: '5rem',
+                    height: '5rem',
+                  }}
                 />
               </ImageParagraph>
-            }
-          />
+            </Segment>
+          </Container>
           <Segment
             size="big"
             basic

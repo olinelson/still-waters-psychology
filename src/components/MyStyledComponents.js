@@ -121,8 +121,4 @@ export const ImageParagraph = styled.div`
   grid-template-columns: 1fr auto;
   align-items: center;
   grid-gap: 1rem;
-  @media screen and (max-width: 600px) {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
 `
