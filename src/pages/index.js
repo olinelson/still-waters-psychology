@@ -145,14 +145,29 @@ const IndexPage = ({ location }) => {
           <Container text>
             <Segment attached="bottom" raised compact size="medium">
               <ImageParagraph>
-                <p>
-                  We are a COVID Safe Business (registered with NSW Services)
-                  offering Telehealth services to ensure access to and continued
-                  client care during lockdowns. We also offer in-person sessions
-                  when it is safe for clients to attend on site. Please contact
-                  us on 0466 231 620 to discuss your needs, and/or to arrange an
-                  appointment.
-                </p>
+                <Container text>
+                  <p>
+                    We are a COVID Safe Business (registered with NSW Services).
+                    We offer both In-person and Telehealth services, (video and
+                    phone sessions).
+                  </p>
+                  <p>
+                    In December 2021 the Australian Government made Telehealth a
+                    permanent attendance option for receiving psychological
+                    care. It provides a convenient way to access a psychologist
+                    of your choice and/or one specialised in your area of need,
+                    without having to physically travel to the practice
+                    location. It can be delivered safely. The practice using a
+                    health delivery program (COVIU) that meets the Australian
+                    Digital Health Regulation Standards.
+                  </p>
+                  <p>
+                    Please contact us on 0466 231 620 to discuss your needs, to
+                    arrange an appointment, and/or if you would like more
+                    information about Telehealth.{' '}
+                  </p>
+                </Container>
+
                 <Img
                   alt="Covid safe logo"
                   fixed={data.covidSafe.childImageSharp.fixed}
@@ -325,10 +340,6 @@ const IndexPage = ({ location }) => {
             <p>
               For more information about these areas, please see the{' '}
               <Link to="/services">Services Page</Link> for more details.
-            </p>
-            <p>
-              Clinical supervision is also available for allied health
-              professionals, chaplains, minsters and church leaders.
             </p>
           </Segment>
         </Container>
