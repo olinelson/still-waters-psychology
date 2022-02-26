@@ -155,16 +155,16 @@ const IndexPage = ({ location }) => {
                     In December 2021 the Australian Government made Telehealth a
                     permanent attendance option for receiving psychological
                     care. It provides a convenient way to access a psychologist
-                    of your choice and/or one specialised in your area of need,
+                    of your choice, and/or one specialised in your area of need,
                     without having to physically travel to the practice
-                    location. It can be delivered safely. The practice using a
-                    health delivery program (COVIU) that meets the Australian
+                    location. It can be delivered safely. The practice uses a
+                    health delivery program (COVIU) which meets the Australian
                     Digital Health Regulation Standards.
                   </p>
                   <p>
                     Please contact us on 0466 231 620 to discuss your needs, to
                     arrange an appointment, and/or if you would like more
-                    information about Telehealth.{' '}
+                    information about Telehealth.
                   </p>
                 </Container>
 
